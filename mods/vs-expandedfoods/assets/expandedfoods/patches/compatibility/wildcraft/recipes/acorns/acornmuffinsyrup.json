@@ -4,6 +4,7 @@
     op: "add", 
     path: "/0/ingredients/0/inputs/-", 
     value: { type: "item", code: "expandedfoods:wildfruitsyrupportion-*",  quantity: 10 },
+    side: "server",
     dependsOn: [{ "modid": "acorns" }, { "modid": "wildcraft" }]
  },
  {
@@ -11,6 +12,7 @@
     op: "add", 
     path: "/1/ingredients/0/inputs/-", 
     value: { type: "item", code: "expandedfoods:wildfruitsyrupportion-*",  quantity: 10 },
+    side: "server",
     dependsOn: [{ "modid": "acorns" }, { "modid": "wildcraft" }]
  },
  {
@@ -18,6 +20,7 @@
     op: "add", 
     path: "/2/ingredients/0/inputs/-", 
     value: { type: "item", code: "expandedfoods:wildfruitsyrupportion-*",  quantity: 10 },
+    side: "server",
     dependsOn: [{ "modid": "acorns" }, { "modid": "wildcraft" }]
  },
 ]

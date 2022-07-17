@@ -481,6 +481,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
   {
@@ -965,6 +966,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
  {
@@ -1453,6 +1455,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
   {
@@ -1941,6 +1944,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
   {
@@ -2841,6 +2845,7 @@
         "maxQuantity": 1,
         "portionSizeLitres": 0.1,
     },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
  {
@@ -3379,6 +3384,7 @@
             ]
         },
     ],
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json",
     dependsOn: [{ "modid": "wildcraft" }]
   },
@@ -3394,6 +3400,7 @@
             "fishsauce"
           ]
     },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json",
     dependsOn: [{ "modid": "primitivesurvival" }]
   },
@@ -3411,6 +3418,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
  {
@@ -3420,6 +3428,7 @@
       "type": "item",
       "code": "expandedfoods:acornbreadcrumbs-*"
     },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
   {
@@ -3436,6 +3445,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
   {
@@ -3451,6 +3461,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
  {
@@ -3458,6 +3469,7 @@
     "path": "/ingredients/7/validStacks/-",
     "value":
         { "type": "item", "code": "expandedfoods:acornportion", "shapeElement": "bowl/nuts 1/*", "textureMapping": [ "acorns", "acorns" ] },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json",
     dependsOn: [{ "modid": "acorns" }]
   },
@@ -3474,6 +3486,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json"
   },
  {
@@ -3481,6 +3494,7 @@
     "path": "/ingredients/8/validStacks/-",
     "value": 
         { "type": "item", "code": "expandedfoods:acornportion", "shapeElement": "bowl/nuts 2/*", "textureMapping": [ "acorns", "acorns" ] },
+    side: "server",
     "file": "recipes/cooking/vegetablestew.json",
     dependsOn: [{ "modid": "acorns" }]
   },

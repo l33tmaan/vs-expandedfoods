@@ -39,6 +39,12 @@ Ancient Tools Compatibility added
 RenderIngredients now uses selectiveElements to cut down on files
 Breaded mushrooms added
 Fixed visual issues with Alchemy herbs & racks
+Rolling pin is ground storable (1.17)
+Saucepan/cauldron/mixing bowl shapes refined - DONE!!!
+Cauldrons are buyable from traders
+Most patches now server-side - DONE!!!
+Patched shapes are now actually visible in porridge, soup, & veggie stew - DONE!!!
+Gelatin now requires consistent amounts of syrup/juice (Wildcraft liquids were incorrect)
 
 
 1.5.5

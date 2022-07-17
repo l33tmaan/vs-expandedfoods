@@ -467,6 +467,7 @@
 				},
     ],
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "acorns" }]
   },
   {
@@ -503,6 +504,7 @@
 				},
     ],
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "acorns" }, { "modid": "primitivesurvival" }]
   },
 ]

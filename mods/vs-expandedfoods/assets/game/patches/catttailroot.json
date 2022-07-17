@@ -10,6 +10,7 @@
       "endScaleY": 1.0,
       "resultCode": "expandedfoods:cookedveggie-cattailroot-partbaked"
     },
+    side: "server",
     "file": "itemtypes/resource/catttailroot.json"
   },
   {
@@ -28,11 +29,13 @@
       },
       "scale": 0.75
     },
+    side: "server",
     "file": "itemtypes/resource/catttailroot.json"
   },
   {
     "op": "replace",
     "path": "/combustibleProps/smeltedStack/code",
+    side: "server",
     "value": "expandedfoods:cookedveggie-cattailroot-charred",
     "file": "itemtypes/resource/catttailroot.json"
   }

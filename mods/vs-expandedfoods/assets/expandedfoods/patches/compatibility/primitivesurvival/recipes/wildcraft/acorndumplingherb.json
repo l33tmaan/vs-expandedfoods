@@ -4,6 +4,7 @@
     op: "addeach", 
     path: "/1/ingredients/2/inputs/-", 
     value: [{ type: "item", code: "expandedfoods:fishnugget-raw", quantity: 1}, { type: "item", code: "expandedfoods:crabnugget-raw", quantity: 1}, { type: "item", code: "expandedfoods:snakenugget-raw", quantity: 1},],
+    side: "server",
     dependsOn: [{ "modid": "acorns" }, { "modid": "primitivesurvival" }, { "modid": "wildcraft" }]
  },
  {
@@ -11,6 +12,7 @@
     op: "addeach", 
     path: "/3/ingredients/2/inputs/-", 
     value: [{ type: "item", code: "expandedfoods:fishnugget-raw", quantity: 1}, { type: "item", code: "expandedfoods:crabnugget-raw", quantity: 1}, { type: "item", code: "expandedfoods:snakenugget-raw", quantity: 1},],
+    side: "server",
     dependsOn: [{ "modid": "acorns" }, { "modid": "primitivesurvival" }, { "modid": "wildcraft" }]
  },
 ]

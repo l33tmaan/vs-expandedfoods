@@ -4,6 +4,7 @@
     op: "add", 
     path: "/0/ingredients/1/inputs/-", 
     value: { type: "item", code: "moreanimals:egg-*-raw", quantity: 1},
+    side: "server",
     dependsOn: [ { "modid": "acorns" }, { "modid": "moreanimals" }]
  },
 ]

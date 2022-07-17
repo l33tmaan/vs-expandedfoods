@@ -1,12 +1,14 @@
 [
   {
     "op": "replace",
+    side: "server",
     "path": "/class",
     "value": "BlockExpandedClayOven",
     "file": "blocktypes/clay/oven.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/entityClass",
     "value": "ExpandedOven",
     "file": "blocktypes/clay/oven.json"

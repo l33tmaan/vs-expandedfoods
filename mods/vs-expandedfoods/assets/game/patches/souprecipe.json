@@ -76,6 +76,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/soup.json"
   },
  {
@@ -559,6 +560,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/soup.json"
   },
   {
@@ -1033,6 +1035,7 @@
       ]
     },
     ], 
+    side: "server",
     "file": "recipes/cooking/soup.json"
   },
   {
@@ -1507,6 +1510,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/soup.json"
   },
   {
@@ -1609,6 +1613,7 @@
             "shapeElement": "bowl/meat/*"
         },
     ],
+    side: "server",
     "file": "recipes/cooking/soup.json"
   },
   {
@@ -1641,6 +1646,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/soup.json"
   },
   {
@@ -1652,6 +1658,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/soup.json",
 	dependsOn: [{ "modid": "acorns" }]
   },
@@ -1669,6 +1676,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/soup.json"
   },
  {
@@ -1679,6 +1687,7 @@
         {"type": "item", "code": "expandedfoods:crabnugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "crabmeat" ]},
         {"type": "item", "code": "expandedfoods:snakenugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "snakemeat" ]},
     ],
+    side: "server",
     "file": "recipes/cooking/soup.json",	
 	dependsOn: [{ "modid": "primitivesurvival" }]
   },

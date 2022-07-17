@@ -4,6 +4,7 @@
     op: "add", 
     path: "/skipVariants",
     value: [ "yogurt-huckleberry", "yogurt-snowberry", "yogurt-brambleberry", "yogurt-honeysuckle", "yogurt-cloudberry", "yogurt-dogrose", "yogurt-elderberry", "yogurt-gooseberry", "yogurt-strawberry", "yogurt-raspberry",  ],
+    side: "server",
     dependsOn: [{ "modid": "wildcraft", "invert": true }]
  },
  {
@@ -11,6 +12,7 @@
     op: "add", 
     path: "/0/enabled", 
     value: "false",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft", "invert": true }]
  },
 ]

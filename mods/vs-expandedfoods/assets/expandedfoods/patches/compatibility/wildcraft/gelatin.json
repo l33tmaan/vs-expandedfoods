@@ -4,6 +4,7 @@
     op: "add", 
     path: "/skipVariants",
     value: [ "gelatin-huckleberry", "gelatin-snowberry", "gelatin-brambleberry", "gelatin-honeysuckle", "gelatin-cloudberry", "gelatin-dogrose", "gelatin-elderberry", "gelatin-gooseberry", "gelatin-strawberry", "gelatin-raspberry",  ],
+    side: "server",
     dependsOn: [{ "modid": "wildcraft", "invert": true }]
  },
 ]

@@ -5,6 +5,10 @@
 	},
 	"textureWidth": 16,
 	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+	},
 	"elements": [
 		{
 			"name": "origin",
@@ -826,7 +830,7 @@
 						"east": { "texture": "#metaldark", "uv": [ 11.0, 9.5, 12.0, 11.5 ] },
 						"south": { "texture": "#metaldark", "uv": [ 11.5, 0.0, 12.5, 2.0 ] },
 						"west": { "texture": "#metaldark", "uv": [ 13.5, 8.5, 14.5, 10.5 ] },
-						"up": { "texture": "#metaldark", "uv": [ 2.5, 1.5, 3.5, 2.5 ] },
+						"up": { "texture": "#metaldark", "uv": [ 2.5, 1.5, 3.5, 2.5 ], "enabled": false },
 						"down": { "texture": "#metaldark", "uv": [ 5.5, 0.0, 6.5, 1.0 ] }
 					}
 				}

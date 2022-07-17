@@ -2,6 +2,7 @@
   {
     "op": "remove",
     "path": "/attributes/nutritionPropsWhenInMeal",
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -17,18 +18,21 @@
         "foodcategory": "Protein"
       }
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
     "op": "add",
     "path": "/class",
     "value": "TransFix",
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
     "op": "add",
     "path": "/attributes/meathookable",
     "value": true,
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -52,6 +56,7 @@
       },
       "scale": 1
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -71,6 +76,7 @@
       },
       "transitionRatio": 1
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -112,6 +118,7 @@
         "initialCode": "bushmeat-cooked"
       }
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -125,10 +132,12 @@
       },
       "scale": 1
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/combustiblePropsByType/bushmeat-raw/smeltedStack/code",
     "value": "bushmeat-charred",
     "file": "itemtypes/food/bushmeat.json"
@@ -140,6 +149,7 @@
       "satiety": 110,
       "foodcategory": "Protein"
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -149,6 +159,7 @@
       "satiety": 115,
       "foodcategory": "Protein"
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -170,6 +181,7 @@
         "transitionRatio": 1
       }
     ],
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
@@ -191,22 +203,26 @@
         "transitionRatio": 1
       }
     ],
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/variantgroups/0/states/1",
     "value": "partbaked",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
     "op": "add",
+    side: "server",
     "path": "/variantgroups/0/states/2",
     "value": "cooked",
     "file": "itemtypes/food/bushmeat.json"
   },
   {
     "op": "add",
+    side: "server",
     "path": "/variantgroups/0/states/3",
     "value": "charred",
     "file": "itemtypes/food/bushmeat.json"
@@ -224,6 +240,7 @@
         "partType": "Filling"
       }
     },
+    side: "server",
     "file": "itemtypes/food/bushmeat.json"
   }
 ]

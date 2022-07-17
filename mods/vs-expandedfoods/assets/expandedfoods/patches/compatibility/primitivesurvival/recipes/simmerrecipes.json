@@ -216,6 +216,7 @@
 				},
 		],
 	"file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "primitivesurvival" }]
   },
 ]

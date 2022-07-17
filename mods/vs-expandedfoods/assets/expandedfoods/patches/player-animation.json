@@ -19,6 +19,7 @@
         "LowerArmL": "AddAverage"
       }
     },
+    side: "server",
     "file": "game:entities/humanoid/player.json"
   },
   {
@@ -41,6 +42,7 @@
         "LowerArmL": "AddAverage"
       }
     },
+    side: "server",
     "file": "game:entities/humanoid/player.json"
   }
 ]

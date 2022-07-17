@@ -1,6 +1,7 @@
 [
  {
     "op": "add",
+    side: "server",
     "path": "/attributesByType/*",
     "file": "game:itemtypes/food/vegetable.json",
     "value": {
@@ -23,6 +24,7 @@
   },
   {
     "op": "add",
+    side: "server",
     "path": "/combustiblePropsByType",
     "value": {
       "*-cabbage": {
@@ -107,6 +109,7 @@
   },
   {
     "op": "add",
+    side: "server",
     "path": "/attributesByType/*/inFirePitProps",
     "value": {
       "transform": {
@@ -121,6 +124,7 @@
   },
   {
     "op": "add",
+    side: "server",
     "path": "/attributesByType/*/juiceablePropertiesByType",
     "value": {
         "*-olive": {
@@ -164,6 +168,7 @@
       },
       "useFirepitModel": "Spit"
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
     {
@@ -178,6 +183,7 @@
             },
             "useFirepitModel": "Spit"
         },
+        side: "server",
         "file": "itemtypes/food/vegetable.json"
     },
   {
@@ -191,6 +197,7 @@
       "endScaleY": 1.0,
       "resultCode": "expandedfoods:cookedveggie-cabbage-partbaked"
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
@@ -209,6 +216,7 @@
         "stacksize": 1
       }
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
@@ -222,6 +230,7 @@
       },
       "scale": 0.75
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
@@ -235,6 +244,7 @@
       "endScaleY": 1.0,
       "resultCode": "expandedfoods:cookedveggie-cassava-partbaked"
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
@@ -253,6 +263,7 @@
         "stacksize": 1
       }
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
@@ -266,6 +277,7 @@
       "endScaleY": 1.0,
       "resultCode": "expandedfoods:cookedveggie-pumpkin-partbaked"
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
@@ -284,6 +296,7 @@
         "stacksize": 1
       }
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
@@ -297,31 +310,37 @@
       },
       "scale": 1
     },
+    side: "server",
     "file": "itemtypes/food/vegetable.json"
   },
   {
     "op": "remove",
+    side: "server",
     "path": "/variantgroups/0/states/5",
     "file": "itemtypes/food/vegetable.json"
   },
   {
     "op": "remove",
+    side: "server",
     "path": "/variantgroups/0/states/5",
     "file": "itemtypes/food/vegetable.json"
   },
   {
     "op": "remove",
+    side: "server",
     "path": "/variantgroups/0/states/5",
     "file": "itemtypes/food/vegetable.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/variantgroups/0/states/5",
     "value": "pumpkin",
     "file": "itemtypes/food/vegetable.json"
   },
   {
     "op": "add",
+    side: "server",
     "path": "/variantgroups/0/states/7",
     "value": "cassava",
     "file": "itemtypes/food/vegetable.json"

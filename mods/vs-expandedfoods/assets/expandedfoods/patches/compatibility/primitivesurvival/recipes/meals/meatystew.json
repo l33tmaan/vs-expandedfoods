@@ -41,6 +41,7 @@
       	        ]
             },        
         ],   
+        side: "server",
         dependsOn: [{ "modid": "primitivesurvival"}]
     },
     {
@@ -79,6 +80,7 @@
                 "textureMapping": [ "normal", "fishfillet-raw" ]
             },
         ],
+        side: "server",
         dependsOn: [{ "modid": "primitivesurvival" }]
     },
     {
@@ -141,6 +143,7 @@
         },
     ],
     "file": "game:recipes/cooking/meatystew.json",
+    side: "server",
     dependsOn: [ { "modid": "primitivesurvival" } ]
   },
   {
@@ -203,6 +206,7 @@
         },    
     ],
     "file": "game:recipes/cooking/meatystew.json",
+    side: "server",
     dependsOn: [ { "modid": "primitivesurvival" }, { "modid": "wildcraft" } ]
   },
   {
@@ -295,6 +299,7 @@
             ]
         },    
     ],
+    side: "server",
     dependsOn: [{ "modid": "primitivesurvival" }]
   },
   {
@@ -357,6 +362,7 @@
         }, 
     ],
     "file": "game:recipes/cooking/meatystew.json",
+    side: "server",
     dependsOn: [ { "modid": "primitivesurvival" }, { "modid": "wildcraft" } ]
   },
 ]

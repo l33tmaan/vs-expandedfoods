@@ -166,6 +166,7 @@
       ]
     },
     ],
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
   {
@@ -183,6 +184,7 @@
             "shapeElement": "bowl/egg/*"
         },
     ],
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
   {
@@ -483,6 +485,7 @@
       "shapeElement": "bowl/egg2/*"
     },    
     ],
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
   {
@@ -764,6 +767,7 @@
       ]
     },    
     ],
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
  {
@@ -1252,6 +1256,7 @@
       ]
     }, 
     ],
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
   {
@@ -1740,6 +1745,7 @@
       ]
     },    
     ],
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
  {
@@ -2640,6 +2646,7 @@
         "maxQuantity": 1,
         "portionSizeLitres": 0.1,
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
  {
@@ -3178,6 +3185,7 @@
             ]
         },   
     ],
+    side: "server",
     "file": "recipes/cooking/meatystew.json",
     dependsOn: [{ "modid": "wildcraft" }]
   },
@@ -3189,6 +3197,7 @@
           "code": "fishsauce",
           "shapeElement": "bowl/topping/*"
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json",
     dependsOn: [{ "modid": "primitivesurvival" }]
   },
@@ -3526,6 +3535,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json",
   },
   {
@@ -3542,6 +3552,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
  {
@@ -3551,6 +3562,7 @@
       "type": "item",
       "code": "expandedfoods:acornbreadcrumbs-*"
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json",
     dependsOn: [{ "modid": "acorns" }]
   },
@@ -3568,6 +3580,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
   {
@@ -3590,6 +3603,7 @@
         "maxQuantity": 1,
         "portionSizeLitres": 1,
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
   {
@@ -3605,6 +3619,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
   {
@@ -3620,6 +3635,7 @@
       "minQuantity": 0,
       "maxQuantity": 1
     },
+    side: "server",
     "file": "recipes/cooking/meatystew.json"
   },
 ]

@@ -10,12 +10,14 @@
       "endScaleY": 0.8,
       "resultCode": "expandedfoods:wilddryfruit-{fruit}"
     },
+    side: "server",
     "file": "wildcraft:itemtypes/food/fruit.json"
   },
   {
     "file": "wildcraft:itemtypes/food/fruit.json",
     "op": "add",
     "path": "/attributes/onDisplayTransformByType",
+    side: "server",
     "value": {
     "*-strawberry": {
         "translation": { "x": -0.05, "y": -0.255, "z": 0.15 },

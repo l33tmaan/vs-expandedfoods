@@ -1,30 +1,35 @@
 [
   {
     "op": "replace",
+    side: "server",
     "path": "/fpHandTransformByType/*-cabbage/scale",
     "value": 1.25,
     "file": "itemtypes/food/pickledvegetable.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/groundTransformByType/*-cabbage/scale",
     "value": 3,
     "file": "itemtypes/food/pickledvegetable.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/tpHandTransformByType/*-cabbage/scale",
     "value": 0.5,
     "file": "itemtypes/food/pickledvegetable.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/tpHandTransformByType/*-cabbage/translation/x",
     "value": -0.9,
     "file": "itemtypes/food/pickledvegetable.json"
   },
   {
     "op": "replace",
+    side: "server",
     "path": "/tpHandTransformByType/*-cabbage/translation/z",
     "value": -1,
     "file": "itemtypes/food/pickledvegetable.json"
@@ -82,6 +87,7 @@
         "resultCode": "expandedfoods:cookedchoppedvegetable-pickledbellpepper-partbaked"
       }
     },
+    side: "server",
     "file": "itemtypes/food/pickledvegetable.json"
   },
   {
@@ -120,6 +126,7 @@
         "scale": 1
       }
     },
+    side: "server",
     "file": "itemtypes/food/pickledvegetable.json"
   },
  {
@@ -193,6 +200,7 @@
         "requiresContainer": false
       }
     },
+    side: "server",
     "file": "itemtypes/food/pickledvegetable.json"
   }
 ]

@@ -13,7 +13,7 @@
 				{
 					"type": "item",
 					"code": "wildcraft:juiceportion-huckleberry",
-					"quantity": 100
+					"quantity": 10
 				},
 				{
 					"type": "item",
@@ -34,6 +34,7 @@
 			}
 		},
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -50,7 +51,7 @@
 				{
 					"type": "item",
 					"code": "expandedfoods:wildfruitsyrupportion-huckleberry",
-					"quantity": 100
+					"quantity": 10
 				},
 				{
 					"type": "item",
@@ -77,6 +78,7 @@
 			}
 		},
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -93,7 +95,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-snowberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -114,6 +116,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -130,7 +133,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-snowberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -157,6 +160,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -173,7 +177,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-brambleberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -194,6 +198,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -210,7 +215,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-brambleberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -237,6 +242,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -253,7 +259,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-cloudberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -274,6 +280,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -290,7 +297,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-cloudberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -317,6 +324,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -333,7 +341,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-dogrose",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -354,6 +362,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -370,7 +379,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-dogrose",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -397,6 +406,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -413,7 +423,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-elderberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -434,6 +444,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -450,7 +461,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-elderberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -477,6 +488,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -493,7 +505,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-gooseberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -514,6 +526,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -530,7 +543,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-gooseberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -557,6 +570,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -573,7 +587,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-honeysuckle",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -594,6 +608,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -610,7 +625,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-honeysuckle",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -637,6 +652,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -653,7 +669,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-strawberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -674,6 +690,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -690,7 +707,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-strawberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -717,6 +734,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -733,7 +751,7 @@
                 {
                     "type": "item",
                     "code": "wildcraft:juiceportion-raspberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -754,6 +772,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
   {
@@ -770,7 +789,7 @@
                 {
                     "type": "item",
                     "code": "expandedfoods:wildfruitsyrupportion-raspberry",
-                    "quantity": 100
+                    "quantity": 10
                 },
                 {
                     "type": "item",
@@ -797,6 +816,7 @@
             }
         },
     "file": "blocktypes/saucepan.json",
+    side: "server",
     dependsOn: [{ "modid": "wildcraft" }]
   },
 ]

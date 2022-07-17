@@ -4,6 +4,7 @@
     op: "add", 
     path: "/1/ingredients/1/inputs/-", 
     value: { type: "item", code: "moreanimals:egg-*-boiled", quantity: 1},
+    side: "server",
     dependsOn: [ { "modid": "acorns" }, { "modid": "moreanimals" }]
  },
  {
@@ -11,6 +12,7 @@
     op: "add", 
     path: "/3/ingredients/1/inputs/-", 
     value: { type: "item", code: "moreanimals:egg-*-boiled", quantity: 1},
+    side: "server",
     dependsOn: [ { "modid": "acorns" }, { "modid": "moreanimals" }]
  },
 ]
