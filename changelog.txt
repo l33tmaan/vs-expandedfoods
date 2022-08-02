@@ -21,7 +21,6 @@ Added egg cracking - eggs now must be cracked into a liquid container; makes yol
 Added candied apples
 Added mushroom ketchup/juice
 Added VanVar compatibility for more mixing bowl variants
-Added vegetable broth
 Added gummy candy (spiles on cherry, peach, plum, or apricot tree to get gum; harden into gum or mixed with syrup or honey for candy; make candy molds)
 Fixed meat rack cure timer?
 Remove smashed meat variants?
@@ -33,19 +32,29 @@ Added industrial mixing bowl (works much faster, higher storage capacity)
 Added 'tenderized' attribute to meat
 Fruit leather added?
 Fixed pies?
+Cauldrons have different sealed perish rates & cook times
 
 1.5.6
+Added vegetable, meat, and fish broth
 Ancient Tools Compatibility added
 RenderIngredients now uses selectiveElements to cut down on files
 Breaded mushrooms added
-Fixed visual issues with Alchemy herbs & racks
+Fixed visual issues with Alchemy herbs & racks - DONE!!!
+Meat rack model updated - DONE!!!
 Rolling pin is ground storable (1.17)
 Saucepan/cauldron/mixing bowl shapes refined - DONE!!!
-Cauldrons are buyable from traders
+Many blocks can be bought/sold by Agricultural trader - DONE!!!
 Most patches now server-side - DONE!!!
 Patched shapes are now actually visible in porridge, soup, & veggie stew - DONE!!!
-Gelatin now requires consistent amounts of syrup/juice (Wildcraft liquids were incorrect)
-
+Gelatin now requires consistent amounts of syrup/juice (Wildcraft liquids were incorrect) - DONE!!!
+1 L of bone broth can be added to meat/veggie stew or soup - DONE!!!
+Cloudberry stuff takes longer to spoil - DONE!!!
+Bottle corks made smaller - DONE!!!
+Meat nugget shapes altered - DONE!!!
+New liquid textures for broth, yeast, fish sauce, oil, and raspberry gelatin (thanks to Ledyanaya Sonya) - DONE!!!
+Salad shape refined - DONE!!!
+English translation refined (thanks to Ledyanaya Sonya) - DONE!!!
+Bottles no longer disappear in grass (thanks to SpearAndFang)- DONE!!!
 
 1.5.5
 Olive oil added

@@ -77,29 +77,7 @@
         "transitionRatio": 0.25
       },
     ],
-    "*-cloudberry": [
-      {
-        "type": "Perish",
-        "freshHours": { "avg": 6 },
-        "transitionHours": { "avg": 2 },
-        "transitionedStack": {
-          "type": "item",
-          "code": "game:rot"
-        },
-        "transitionRatio": 0.25
-      },
-      {
-        "type": "Dry",
-        "freshHours": { "avg": 0 },
-        "transitionHours": { "avg": 4 },
-        "transitionedStack": {
-          "type": "item",
-          "code": "expandedfoods:wilddryfruit-{type}"
-        },
-        "transitionRatio": 0.25
-      },
-    ],
-    "@*-(strawberry|honeysuckle)": [
+    "@*-(strawberry|honeysuckle|cloudberry)": [
       {
         "type": "Perish",
         "freshHours": { "avg": 24 },

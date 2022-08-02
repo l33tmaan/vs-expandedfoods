@@ -194,6 +194,16 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\primitivesurvival\pemmican.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\breadedvegetable.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\gozinaki.json" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\flax.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\hemp.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\olive.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\peanut.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\rice.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\seed.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\soy.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\sunflower.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\potentmead.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\syrupmead.png" />
     <Content Include="mods\vs-expandedfoods\modicon.png" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\sounds\block\mixing.ogg" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\sounds\lock.ogg" />
@@ -969,7 +979,6 @@
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\carrot.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\cassava.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\fishsauce.png" />
-    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\onion.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\parsnip.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\potentwine.png" />
@@ -1284,6 +1293,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\remaps.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\seeds.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\pressedmash.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\trader-foods.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\clayforming\bighookmold.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\clayforming\bottle.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\clayforming\bottle4.json" />

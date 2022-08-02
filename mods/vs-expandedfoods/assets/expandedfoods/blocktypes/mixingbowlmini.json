@@ -5,9 +5,6 @@
 	"behaviors": [ { "name": "Container" } ],
 	"attributes": {
 		"capacityLitres": 3,
-		"handbook": {
-			"groupBy": [ "mixingbowl-*" ]
-		}
 	},
 	"creativeinventory": {
 		"general": [ "*" ],

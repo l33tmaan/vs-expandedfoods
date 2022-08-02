@@ -3,14 +3,35 @@
 	class: "ItemLiquidPortion",
 	matterState: "liquid",
 	variantgroups: [
-		{ code: "type", states: ["bone"] },
+		{ code: "type", states: ["bone", "vegetable", "meat", "fish"] },
 	],
 	attributes: {
 		handbook: {
 			ignoreCreativeInvStacks: true
 		},
 		"inBowlShape": { "base": "game:block/food/meal/liquid" },
-		nutritionPropsWhenInMeal: { satiety: 100, health: 1, foodcategory: "Protein" },
+		nutritionPropsWhenInMealByType: {
+			"*-bone": {
+				satiety: 100,
+				health: 1,
+				foodcategory: "Protein"
+			},
+			"*-vegetable": {
+				satiety: 100,
+				health: 1,
+				foodcategory: "Vegetable"
+			},
+			"*-meat": {
+				satiety: 125,
+				health: 1,
+				foodcategory: "Protein"
+			},
+			"*-fish": {
+				satiety: 100,
+				health: 1,
+				foodcategory: "Protein"
+			},
+		},
 		waterTightContainerProps: {
 			containable: true,
 			itemsPerLitre: 100,

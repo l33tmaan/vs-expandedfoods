@@ -75,6 +75,15 @@
         "bellpepperjuice"
       ]
     },
+    {
+      "type": "item",
+      "code": "expandedfoods:brothportion-bone",
+      "shapeElement": "bowl/water",
+      "textureMapping": [
+        "water",
+        "bonebroth"
+      ]
+    },
     ],
     side: "server",
     "file": "recipes/cooking/soup.json"

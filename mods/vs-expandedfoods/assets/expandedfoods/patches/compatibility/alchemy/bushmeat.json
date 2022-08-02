@@ -12,8 +12,8 @@
     "path": "/attributes/herbRackTransform",
     "value": {
       "translation": {
-        "x": 0.04,
-        "y": 0.35,
+        "x": 0.01,
+        "y": 0.175,
         "z": 0.03
       },
       "rotation": {

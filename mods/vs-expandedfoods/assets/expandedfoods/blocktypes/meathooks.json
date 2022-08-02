@@ -17,8 +17,8 @@
 	},
 	creativeinventory: { "general": ["*-east"], "terrain": ["*-east"], "expandedfoods": ["*-east"] },
 	textures: {
-		pine: {base: "game:block/wood/planks/{wood}1"},
-		copper: {base: "game:block/metal/ingot/{metal}"}
+		wood: {base: "game:block/wood/planks/{wood}1"},
+		metal: {base: "game:block/metal/ingot/{metal}"}
 	},
 	attributes: {
 		cureRate: 3,
@@ -39,6 +39,20 @@
 		{ x1: 0.0625, y1: 0.5, z1: 0.5, x2: 0.5, y2: 1, z2: 0.9375 },
 		{ x1: 0.5, y1: 0.5, z1: 0.5, x2: 0.9375, y2: 1, z2: 0.9375 },
 	],
+	guiTransform: {
+		origin: { x: 0.5, y: 0.75, z: 0.5 },
+		scale: 1.5
+	},
+	tpHandTransform: {
+		translation: { x: -0.75, y: -1, z: -0.675 },
+		rotation: { x: 12, y: 15, z: -80 },
+		scale: 0.5
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: -45, z: 0 },
+		scale: 3
+	},
 	sideopaque: { all: false },
 	sideao: { all: true },
 	emitsideao: { all: false },

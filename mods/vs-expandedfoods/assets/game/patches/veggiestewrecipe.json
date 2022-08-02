@@ -3498,4 +3498,27 @@
     "file": "recipes/cooking/vegetablestew.json",
     dependsOn: [{ "modid": "acorns" }]
   },
+  {
+    "op": "add",
+    "path": "/ingredients/9",
+    "value": {
+      "code": "broth",
+      "validStacks": [
+        {
+          "type": "item",
+          "code": "expandedfoods:brothportion-bone",
+          "shapeElement": "bowl/topping/*",
+          "textureMapping": [
+            "topping",
+            "bonebroth"
+          ]
+        }
+      ],
+      "minQuantity": 0,
+        "maxQuantity": 1,
+        "portionSizeLitres": 1,
+    },
+    side: "server",
+    "file": "recipes/cooking/vegetablestew.json"
+  },
 ]

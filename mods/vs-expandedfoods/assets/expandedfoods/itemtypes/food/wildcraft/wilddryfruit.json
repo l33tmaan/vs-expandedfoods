@@ -75,19 +75,7 @@
         "transitionRatio": 0.25
       }
     ],
-    "*-cloudberry": [
-      {
-        "type": "Perish",
-        "freshHours": { "avg": 60 },
-        "transitionHours": { "avg": 20 },
-        "transitionedStack": {
-          "type": "item",
-          "code": "game:rot"
-        },
-        "transitionRatio": 0.25
-      }
-    ],
-    "*-strawberry": [
+    "@*-(strawberry|cloudberry|honeysuckle)": [
       {
         "type": "Perish",
         "freshHours": { "avg": 240 },
@@ -115,18 +103,6 @@
       {
         "type": "Perish",
         "freshHours": { "avg": 960 },
-        "transitionHours": { "avg": 120 },
-        "transitionedStack": {
-          "type": "item",
-          "code": "game:rot"
-        },
-        "transitionRatio": 0.25
-      }
-    ],
-    "*-honeysuckle": [
-      {
-        "type": "Perish",
-        "freshHours": { "avg": 240 },
         "transitionHours": { "avg": 120 },
         "transitionedStack": {
           "type": "item",

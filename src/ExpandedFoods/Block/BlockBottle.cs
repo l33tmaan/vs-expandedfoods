@@ -102,7 +102,7 @@
             renderinfo.ModelRef = meshRef;
         }
 
-        public override bool TryPlaceBlock(IWorldAccessor world, IPlayer byPlayer, ItemStack itemstack, BlockSelection blockSel, ref string failureCode)
+    /*    public override bool TryPlaceBlock(IWorldAccessor world, IPlayer byPlayer, ItemStack itemstack, BlockSelection blockSel, ref string failureCode)
         {
             // This is a little odd - you have to sneak place but if there's something in a quadrant then you don't
             // Seems to be a vanilla thing (see bowl) - let's leave it as is for now
@@ -118,7 +118,7 @@
             // not a fan of returning true here - if there's a problem this might be the cause
             return true;
         }
-
+    */
 
         protected int GetStackCacheHashCode(ItemStack contentStack)
         {

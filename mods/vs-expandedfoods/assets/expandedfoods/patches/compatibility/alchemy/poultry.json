@@ -12,9 +12,9 @@
     "path": "/attributes/herbRackTransform",
     "value": {
       "translation": {
-        "x": 0.02,
-        "y": 0.35,
-        "z": -0.02
+        "x": 0.01,
+        "y": 0.175,
+        "z": 0.02
       },
       "rotation": {
         "x": 0,
