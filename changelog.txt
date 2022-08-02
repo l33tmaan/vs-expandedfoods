@@ -55,6 +55,7 @@ New liquid textures for broth, yeast, fish sauce, oil, and raspberry gelatin (th
 Salad shape refined - DONE!!!
 English translation refined (thanks to Ledyanaya Sonya) - DONE!!!
 Bottles no longer disappear in grass (thanks to SpearAndFang)- DONE!!!
+Mushrooms boil in 0.5 L instead of 1 L
 
 1.5.5
 Olive oil added
