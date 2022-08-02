@@ -214,6 +214,48 @@
 						requiresContainer: false
 					}
 				},
+				{
+					Ingredients: [
+						{ type: "item", code: "waterportion", quantity: 100 },
+						{ type: "item", code: "primitivesurvival:psfish-*-raw", quantity: 1 }
+					],
+					Simmering: {
+						meltingPoint: 200,
+						meltingDuration: 110,
+						smeltedRatio: 1,
+						smeltingType: "bake",
+						smeltedStack: { type: "item", code: "expandedfoods:brothportion-fish", "quantity":  50 },
+						requiresContainer: false
+					}
+				},
+				{
+					Ingredients: [
+					{ type: "item", code: "waterportion", quantity: 100 },
+					{ type: "item", code: "primitivesurvival:crabmeat-partbaked", quantity: 1 }
+					],
+					Simmering: {
+						meltingPoint: 200,
+						meltingDuration: 110,
+						smeltedRatio: 1,
+						smeltingType: "bake",
+						smeltedStack: { type: "item", code: "expandedfoods:brothportion-meat", "quantity":  50  },
+						requiresContainer: false
+					}
+				},
+				{
+					Ingredients: [
+					{ type: "item", code: "waterportion", quantity: 100 },
+					{ type: "item", code: "primitivesurvival:snakemeat-partbaked", quantity: 1 }
+					],
+					Simmering: {
+						meltingPoint: 200,
+						meltingDuration: 110,
+						smeltedRatio: 1,
+						smeltingType: "bake",
+						smeltedStack: { type: "item", code: "expandedfoods:brothportion-meat", "quantity":  50  },
+						requiresContainer: false
+					}
+				},
 		],
 	"file": "blocktypes/saucepan.json",
     side: "server",

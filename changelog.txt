@@ -33,6 +33,7 @@ Added 'tenderized' attribute to meat
 Fruit leather added?
 Fixed pies?
 Cauldrons have different sealed perish rates & cook times
+Meat & veggies can be boiled in the saucepan
 
 1.5.6
 Added vegetable, meat, and fish broth

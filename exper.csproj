@@ -166,6 +166,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\wildcraft\dumplingherb.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\wildcraft\herbalacornhardtack.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\wildcraft\herbalhardtack.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\primitivesurvival\broth.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\primitivesurvival\recipes\acorns\acornbreadedfishnugget.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\acornbreadedmeatnugget.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\acornbreadedvegetable.json" />
