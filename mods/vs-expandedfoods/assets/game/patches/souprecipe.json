@@ -84,9 +84,45 @@
         "bonebroth"
       ]
     },
+    {
+      "type": "item",
+      "code": "expandedfoods:brothportion-meat",
+      "shapeElement": "bowl/water",
+      "textureMapping": [
+        "water",
+        "meatbroth"
+      ]
+    },
+    {
+      "type": "item",
+      "code": "expandedfoods:brothportion-vegetable",
+      "shapeElement": "bowl/water",
+      "textureMapping": [
+        "water",
+        "vegetablebroth"
+      ]
+    },
     ],
     side: "server",
     "file": "recipes/cooking/soup.json"
+  },
+  {
+    "file": "game:recipes/cooking/soup.json",
+    "op": "addeach",
+    "path": "/ingredients/0/validStacks/-",
+    "value": [
+        {
+          "type": "item",
+          "code": "expandedfoods:brothportion-fish",
+          "shapeElement": "bowl/water/*",
+          "textureMapping": [
+            "water",
+            "fishbroth"
+          ]
+        },
+    ],
+    side: "server",
+    dependsOn: [{ "modid": "primitivesurvival" }]
   },
  {
     "op": "addeach",
@@ -1625,6 +1661,18 @@
     side: "server",
     "file": "recipes/cooking/soup.json"
   },
+ {
+    "op": "addeach",
+    "path": "/ingredients/4/validStacks/-",
+    "value": [
+        {"type": "item", "code": "expandedfoods:fishnugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "fishfillet-raw" ]},
+        {"type": "item", "code": "expandedfoods:crabnugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "crabmeat" ]},
+        {"type": "item", "code": "expandedfoods:snakenugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "snakemeat" ]},
+    ],
+    side: "server",
+    "file": "recipes/cooking/soup.json",	
+	dependsOn: [{ "modid": "primitivesurvival" }]
+  },
   {
     "op": "add",
     "path": "/ingredients/5",
@@ -1687,17 +1735,5 @@
     },
     side: "server",
     "file": "recipes/cooking/soup.json"
-  },
- {
-    "op": "addeach",
-    "path": "/ingredients/4/validStacks/-",
-    "value": [
-        {"type": "item", "code": "expandedfoods:fishnugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "fishfillet-raw" ]},
-        {"type": "item", "code": "expandedfoods:crabnugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "crabmeat" ]},
-        {"type": "item", "code": "expandedfoods:snakenugget-raw", "shapeElement": "bowl/meatnugget 1/*", "textureMapping": [ "meatnugget", "snakemeat" ]},
-    ],
-    side: "server",
-    "file": "recipes/cooking/soup.json",	
-	dependsOn: [{ "modid": "primitivesurvival" }]
   },
 ]

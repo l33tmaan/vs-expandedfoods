@@ -36,7 +36,8 @@ Cauldrons have different sealed perish rates & cook times
 Meat & veggies can be boiled in the saucepan
 
 1.5.6
-Added vegetable, meat, and fish broth
+Added vegetable, meat, and fish broth - DONE!!!
+Broth is usable in hot pasta - DONE!!!
 Ancient Tools Compatibility added
 RenderIngredients now uses selectiveElements to cut down on files
 Breaded mushrooms added
@@ -56,7 +57,7 @@ New liquid textures for broth, yeast, fish sauce, oil, and raspberry gelatin (th
 Salad shape refined - DONE!!!
 English translation refined (thanks to Ledyanaya Sonya) - DONE!!!
 Bottles no longer disappear in grass (thanks to SpearAndFang)- DONE!!!
-Mushrooms boil in 0.5 L instead of 1 L
+Mushrooms boil in 0.5 L instead of 1 L - DONE!!!
 
 1.5.5
 Olive oil added

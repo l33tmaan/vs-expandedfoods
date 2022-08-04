@@ -1493,6 +1493,33 @@
   },
   {
     "op": "add",
+    "path": "/texturesByType/*/fishbroth",
+    "value": {
+      "base": "item/liquid/fishbroth"
+    },
+    side: "server",
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/meatbroth",
+    "value": {
+      "base": "item/liquid/meatbroth"
+    },
+    side: "server",
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/texturesByType/*/vegetablebroth",
+    "value": {
+      "base": "item/liquid/vegetablebroth"
+    },
+    side: "server",
+    "file": "blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
     "path": "/attributesByType/claypot-cooked/textureMapping/expandedfoods:gelatin-birch",
     "value": [
       "topping",

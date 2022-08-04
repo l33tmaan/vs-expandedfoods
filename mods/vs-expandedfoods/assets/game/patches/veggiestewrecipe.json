@@ -3512,7 +3512,25 @@
             "topping",
             "bonebroth"
           ]
-        }
+        },
+        {
+          "type": "item",
+          "code": "expandedfoods:brothportion-meat",
+          "shapeElement": "bowl/topping/*",
+          "textureMapping": [
+            "topping",
+            "meatbroth"
+          ]
+        },
+        {
+          "type": "item",
+          "code": "expandedfoods:brothportion-vegetable",
+          "shapeElement": "bowl/topping/*",
+          "textureMapping": [
+            "topping",
+            "vegetablebroth"
+          ]
+        },
       ],
       "minQuantity": 0,
         "maxQuantity": 1,
@@ -3520,5 +3538,23 @@
     },
     side: "server",
     "file": "recipes/cooking/vegetablestew.json"
+  },
+  {
+    "file": "game:recipes/cooking/vegetablestew.json",
+    "op": "addeach",
+    "path": "/ingredients/9/validStacks/-",
+    "value": [
+        {
+          "type": "item",
+          "code": "expandedfoods:brothportion-fish",
+          "shapeElement": "bowl/topping/*",
+          "textureMapping": [
+            "topping",
+            "fishbroth"
+          ]
+        },
+    ],
+    side: "server",
+    dependsOn: [{ "modid": "primitivesurvival" }]
   },
 ]
