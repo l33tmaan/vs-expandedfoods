@@ -1,6 +1,6 @@
 {
 　　// Japanese localization file for 'Expanded Foods'
-　　// Mod Version: 1.5.5	
+　　// Mod Version: 1.5.6	
 　　// Translated By: Macoto Hino
 　　// Machine translation using PCOT and DeepL
 
@@ -1434,6 +1434,7 @@
   "item-sausage-redmeat-driedpartbaked": "ヴィンテージ赤肉ソーセージ(生焼け)",
   "item-sausage-redmeat-driedcooked": "ヴィンテージ赤肉ソーセージ",
   "item-sausage-redmeat-driedcharred": "ヴィンテージ赤肉ソーセージ(黒焦げ)",
+
   "item-sausage-bushmeatcheese-raw": "生のチーズ入りブッシュミートソーセージ",
   "item-sausage-bushmeatcheese-partbaked": "調理済チーズ入りブッシュミートソーセージ(生焼け)",
   "item-sausage-bushmeatcheese-cooked": "調理済チーズ入りブッシュミートソーセージ",
@@ -1491,6 +1492,7 @@
   "item-sausageherb-redmeat-driedpartbaked": "ハーブ入りヴィンテージ赤肉ソーセージ(生焼け)",
   "item-sausageherb-redmeat-driedcooked": "ハーブ入りヴィンテージ赤肉ソーセージ",
   "item-sausageherb-redmeat-driedcharred": "ハーブ入りヴィンテージ赤肉ソーセージ(黒焦げ)",
+
   "item-sausageherb-bushmeatcheese-raw": "生の特製ブッシュミートソーセージ",
   "item-sausageherb-bushmeatcheese-partbaked": "調理済特製ブッシュミートソーセージ(生焼け)",
   "item-sausageherb-bushmeatcheese-cooked": "調理済特製ブッシュミートソーセージ",
@@ -1644,6 +1646,7 @@
   "itemdesc-sausagefish-*-driedpartbaked": "そのお肉はレア！",
   "itemdesc-sausagefish-*-driedcooked": "複雑な味わいが素晴らしい！",
   "itemdesc-sausagefish-*-driedcharred": "焦げてて、複雑だけど、やっぱり美味しい。",
+
   "item-sausagefishherb-normal-raw": "生のフィッシュハーブソーセージ",
   "item-sausagefishherb-normal-partbaked": "調理済フィッシュハーブソーセージ(生焼け)",
   "item-sausagefishherb-normal-cooked": "調理済フィッシュハーブソーセージ",
@@ -8216,4 +8219,25 @@
   "game:meal-ingredient-stew-secondary-egg-chicken-boiled": "鶏の茹で卵",
   "game:meal-ingredient-soup-primary-egg-chicken-boiled": "鶏の茹で卵",
   "game:meal-ingredient-soup-secondary-egg-chicken-boiled": "鶏の茹で卵",
+  
+  "item-brothportion-vegetable": "野菜の出し汁",
+  "itemdesc-brothportion-vegetable": "シチューやスープにとろみをつける、美味しい野菜の出し汁!",
+  "recipeingredient-item-brothportion-vegetable-insturmentalcase": "野菜の出し汁",
+  "incontainer-item-brothportion-vegetable": "野菜の出し汁",
+  "game:incontainer-item-brothportion-vegetable": "野菜の出し汁",
+  "game:meal-ingredient-soup-primary-brothportion-vegetable": "野菜の出し汁",
+
+  "item-brothportion-meat": "肉の出し汁",
+  "itemdesc-brothportion-meat": "シチューやスープにとろみをつける、美味しい肉の出し汁!",
+  "recipeingredient-item-brothportion-meat-insturmentalcase": "肉の出し汁",
+  "incontainer-item-brothportion-meat": "肉の出し汁",
+  "game:incontainer-item-brothportion-meat": "肉の出し汁",
+  "game:meal-ingredient-soup-primary-brothportion-meat": "肉の出し汁",
+
+  "item-brothportion-fish": "魚の出し汁",
+  "itemdesc-brothportion-fish": "シチューやスープにとろみをつける、魚の出し汁!",
+  "recipeingredient-item-brothportion-fish-insturmentalcase": "魚の出し汁",
+  "incontainer-item-brothportion-fish": "魚の出し汁",
+  "game:incontainer-item-brothportion-fish": "魚の出し汁",
+  "game:meal-ingredient-soup-primary-brothportion-fish": "魚の出し汁",  
 }
