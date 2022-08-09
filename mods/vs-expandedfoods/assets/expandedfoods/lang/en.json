@@ -6475,7 +6475,7 @@
 
     "heldhelp-drink": "Drink",
 
-    "game:tabname-expandedfoods": "Expanded foods",
+    "game:tabname-expandedfoods": "Expanded Foods",
 
   "game:recipeingredient-item-ciderportion-apple-insturmentalcase": "apple cider",
   "game:recipeingredient-item-ciderportion-mead-insturmentalcase": "mead",
@@ -8239,4 +8239,72 @@
   "incontainer-item-brothportion-fish": "Fish broth",
   "game:incontainer-item-brothportion-fish": "Fish broth",
   "game:meal-ingredient-soup-primary-brothportion-fish": "fish broth",
+
+  "item-limeegg-chicken": "Water-glassed chicken egg",
+  "game:recipeingredient-item-limeegg-chicken": "water-glassed chicken eggs",
+  "game:recipeingredient-item-limeegg-chicken-insturmentalcase": "water-glassed chicken eggs",
+  "recipeingredient-item-limeegg-chicken": "water-glassed chicken eggs",
+  "recipeingredient-item-limeegg-chicken-insturmentalcase": "water-glassed chicken eggs",
+  "game:meal-ingredient-stew-primary-limeegg-chicken": "water-glassed chicken eggs",
+  "game:meal-ingredient-stew-secondary-limeegg-chicken": "water-glassed chicken eggs",
+  "game:meal-ingredient-soup-primary-limeegg-chicken": "water-glassed chicken eggs",
+  "game:meal-ingredient-soup-secondary-limeegg-chicken": "water-glassed chicken eggs",
+
+  "item-limeegg-pheasant": "Water-glassed pheasant egg",
+  "game:recipeingredient-item-limeegg-pheasant": "water-glassed pheasant eggs",
+  "game:recipeingredient-item-limeegg-pheasant-insturmentalcase": "water-glassed pheasant eggs",
+  "recipeingredient-item-limeegg-pheasant": "water-glassed pheasant eggs",
+  "recipeingredient-item-limeegg-pheasant-insturmentalcase": "water-glassed pheasant eggs",
+  "game:meal-ingredient-stew-primary-limeegg-pheasant": "water-glassed pheasant eggs",
+  "game:meal-ingredient-stew-secondary-limeegg-pheasant": "water-glassed pheasant eggs",
+  "game:meal-ingredient-soup-primary-limeegg-pheasant": "water-glassed pheasant eggs",
+  "game:meal-ingredient-soup-secondary-limeegg-pheasant": "water-glassed pheasant eggs",
+
+  "item-limeegg-goldenpheasant": "Water-glassed golden pheasant egg",
+  "game:recipeingredient-item-limeegg-goldenpheasant": "water-glassed golden pheasant eggs",
+  "game:recipeingredient-item-limeegg-goldenpheasant-insturmentalcase": "water-glassed golden pheasant eggs",
+  "recipeingredient-item-limeegg-goldenpheasant": "water-glassed golden pheasant eggs",
+  "recipeingredient-item-limeegg-goldenpheasant-insturmentalcase": "water-glassed golden pheasant eggs",
+  "game:meal-ingredient-stew-primary-limeegg-goldenpheasant": "water-glassed golden pheasant eggs",
+  "game:meal-ingredient-stew-secondary-limeegg-goldenpheasant": "water-glassed golden pheasant eggs",
+  "game:meal-ingredient-soup-primary-limeegg-goldenpheasant": "water-glassed golden pheasant eggs",
+  "game:meal-ingredient-soup-secondary-limeegg-goldenpheasant": "water-glassed golden pheasant eggs",
+
+  "item-limeegg-capercaillie": "Water-glassed capercaillie egg",
+  "game:recipeingredient-item-limeegg-capercaillie": "water-glassed capercaillie eggs",
+  "game:recipeingredient-item-limeegg-capercaillie-insturmentalcase": "water-glassed capercaillie eggs",
+  "recipeingredient-item-limeegg-capercaillie": "water-glassed capercaillie eggs",
+  "recipeingredient-item-limeegg-capercaillie-insturmentalcase": "water-glassed capercaillie eggs",
+  "game:meal-ingredient-stew-primary-limeegg-capercaillie": "water-glassed capercaillie eggs",
+  "game:meal-ingredient-stew-secondary-limeegg-capercaillie": "water-glassed capercaillie eggs",
+  "game:meal-ingredient-soup-primary-limeegg-capercaillie": "water-glassed capercaillie eggs",
+  "game:meal-ingredient-soup-secondary-limeegg-capercaillie": "water-glassed capercaillie eggs",
+
+   "game:heldhelp-crack": "Crack",
+
+   "item-eggshell": "Egg shells",
+
+  "item-eggyolkportion-chicken": "Chicken egg yolk portion",
+  "game:recipeingredient-item-eggyolkportion-chicken": "chicken egg yolk",
+  "recipeingredient-item-eggyolkportion-chicken-insturmentalcase": "chicken egg yolk",
+  "incontainer-item-eggyolkportion-chicken": "Chicken egg yolk",
+  "game:incontainer-item-eggyolkportion-chicken": "Chicken egg yolk",
+
+  "item-eggyolkportion-pheasant": "Pheasant egg yolk portion",
+  "game:recipeingredient-item-eggyolkportion-pheasant": "pheasant egg yolk",
+  "recipeingredient-item-eggyolkportion-pheasant-insturmentalcase": "pheasant egg yolk",
+  "incontainer-item-eggyolkportion-pheasant": "Pheasant egg yolk",
+  "game:incontainer-item-eggyolkportion-pheasant": "Pheasant egg yolk",
+
+  "item-eggyolkportion-goldenpheasant": "Golden pheasant egg yolk portion",
+  "game:recipeingredient-item-eggyolkportion-goldenpheasant": "golden pheasant egg yolk",
+  "recipeingredient-item-eggyolkportion-goldenpheasant-insturmentalcase": "golden pheasant egg yolk",
+  "incontainer-item-eggyolkportion-goldenpheasant": "Golden pheasant egg yolk",
+  "game:incontainer-item-eggyolkportion-goldenpheasant": "Golden pheasant egg yolk",
+
+  "item-eggyolkportion-capercaillie": "Capercaillie egg yolk portion",
+  "game:recipeingredient-item-eggyolkportion-capercaillie": "capercaillie egg yolk",
+  "recipeingredient-item-eggyolkportion-capercaillie-insturmentalcase": "capercaillie egg yolk",
+  "incontainer-item-eggyolkportion-capercaillie": "Capercaillie egg yolk",
+  "game:incontainer-item-eggyolkportion-capercaillie": "Capercaillie egg yolk",
 }

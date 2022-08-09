@@ -61,6 +61,7 @@ namespace ExpandedFoods
             api.RegisterItemClass("TransLiquid", typeof(ItemTransLiquid));
             api.RegisterItemClass("ExpandedLiquid", typeof(ItemExpandedLiquid));
             api.RegisterItemClass("ExpandedDough", typeof(ItemExpandedDough));
+            api.RegisterItemClass("EggCrack", typeof(ItemEggCrack));
 
 			if (harmony == null)
             {

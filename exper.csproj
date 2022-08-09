@@ -95,6 +95,7 @@
     <Compile Include="src\ExpandedFoods\GUI\GuiDialogBlockEntityMixingBowl.cs" />
     <Compile Include="src\ExpandedFoods\Inventory\BlockEntityRackDisplay.cs" />
     <Compile Include="src\ExpandedFoods\Inventory\InventoryMixingBowl.cs" />
+    <Compile Include="src\ExpandedFoods\Item\ItemEggCrack.cs" />
     <Compile Include="src\ExpandedFoods\Item\ItemExpandedDough.cs" />
     <Compile Include="src\ExpandedFoods\Item\ItemExpandedLiquid.cs" />
     <Compile Include="src\ExpandedFoods\Item\ItemTransFix.cs" />
@@ -110,11 +111,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="changelog.txt" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\eggshell.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\choppedmushroom.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\cookedchoppedmushroom.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\cookedmushroom.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\dehydratedfruit.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\eggyolk.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\limeegg.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\wildcraft\wilddehydratedfruit.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\eggwhite.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\eggyolk.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\potentspiritportion.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\strongspiritportion.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\wildcraft\wildpotentspirit.json" />
@@ -141,6 +147,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\acorns\acornhardtack.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\acorns\acornpasta.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\acorns\acornstuffedpepper.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\barrelrecipes.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\breadedmeatnugget.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\breadedvegetable.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\doughball.json" />
@@ -153,6 +160,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\meals\riceandbeansrecipe.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\pasta.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\primitivesurvival\breadedfishnugget.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\simmerrecipe.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\stuffedpepper.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\wildcraft\acornbreadedballherb.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\wildcraft\acornbreadedfishnuggetherb.json" />
@@ -195,6 +203,8 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\primitivesurvival\pemmican.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\breadedvegetable.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\gozinaki.json" />
+    <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\eggshell.png" />
+    <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\limeegg.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\flax.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\hemp.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\olive.png" />
@@ -2298,6 +2308,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\shapes\item\food\veggies\turnip.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\shapes\item\food\void.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\shapes\item\rollingpinshape.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\sounds\player\eggcrack.ogg" />
     <None Include="mods\vs-expandedfoods\assets\exper\itemtypes\wand.json" />
     <None Include="mods\vs-expandedfoods\assets\game\itemtypes\liquid\fishsauce.json" />
     <None Include="mods\vs-expandedfoods\assets\game\itemtypes\liquid\vinegarportion.json" />
@@ -2352,6 +2363,9 @@
     <None Include="mods\vs-expandedfoods\assets\game\patches\waterportion.json" />
     <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\fastvinegar.json" />
     <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\fishsaucebarrel.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\limeegg.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\moreanimals\limeegg.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\moreanimals\pickledegg.json" />
     <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\oiledhide.json" />
     <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\pickledegg.json" />
     <None Include="mods\vs-expandedfoods\assets\game\recipes\barrel\saltproduction.json" />

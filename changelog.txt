@@ -16,8 +16,8 @@ Added herbal bread crumbs
 Added cured aged meat
 Added Garum
 Added Roux & Gumbo meal
+Added Brynza
 Added preserves, jelly & jam - jam, but in the mixing bowl
-Added egg cracking - eggs now must be cracked into a liquid container; makes yolks & shells
 Added candied apples
 Added mushroom ketchup/juice
 Added VanVar compatibility for more mixing bowl variants
@@ -36,6 +36,8 @@ Cauldrons have different sealed perish rates & cook times
 Meat & veggies can be boiled in the saucepan
 
 1.5.6
+Added egg cracking - eggs now must be cracked into a liquid container; makes yolks & shells
+Added water-glassed eggs (made with slaked lime) - DONE!!!
 Added vegetable, meat, and fish broth - DONE!!!
 Broth is usable in hot pasta - DONE!!!
 Ancient Tools Compatibility added
@@ -58,6 +60,8 @@ Salad shape refined - DONE!!!
 English translation refined (thanks to Ledyanaya Sonya) - DONE!!!
 Bottles no longer disappear in grass (thanks to SpearAndFang)- DONE!!!
 Mushrooms boil in 0.5 L instead of 1 L - DONE!!!
+You can actually make pickled More Animals eggs - DONE!!!
+Meat hook shape/mold changed
 
 1.5.5
 Olive oil added

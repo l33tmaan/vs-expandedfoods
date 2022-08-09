@@ -130,5 +130,12 @@
     },
     side: "server",
     "file": "moreanimals:itemtypes/egg.json"
-  }
+  },
+  {
+    "op": "add",
+    "path": "/class",
+    "value": "EggCrack",
+    side: "server",
+    "file": "moreanimals:itemtypes/egg.json"
+  },
 ]
