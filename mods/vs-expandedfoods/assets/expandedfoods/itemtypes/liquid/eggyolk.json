@@ -10,17 +10,20 @@
 			ignoreCreativeInvStacks: true
 		},
 		"inBowlShape": { "base": "game:block/food/meal/liquid" },
-		nutritionPropsWhenInMealByType: {
+		"nutritionPropsWhenInMealByType": {
+			"@*-(pheasant|goldenpheasant|capercaillie)": {
+				saturation: 250,
+				foodcategory: "Protein"
+			},
 			"*-chicken": {
-				satiety: 100,
-				health: 1,
+				saturation: 170,
 				foodcategory: "Protein"
 			},
 		},
 		waterTightContainerProps: {
 			containable: true,
 			itemsPerLitre: 100,
-			texture: { base: "game:item/liquid/eggyolk/{type}" },
+			texture: { base: "game:item/liquid/egg/{type}" },
 			allowSpill: true,
 			whenSpilled: {
 				action: "DropContents",
@@ -30,13 +33,13 @@
 	},
 	transitionableProps: [{
     		type: "Perish",
-    		freshHours: { avg: 24 },
-    		transitionHours: { avg: 6 },
+    		freshHours: { avg: 48 },
+    		transitionHours: { avg: 12 },
     		transitionedStack: { type: "item", code: "game:rot" },
 			transitionRatio: 0.005
   	}],
 	shape: { base: "game:item/liquid" },
-	texture: { base: "game:item/liquid/eggyolk/{type}" },
+	texture: { base: "game:item/liquid/egg/{type}" },
 	creativeinventoryStacks: [ { tabs: ["general", "liquids", "expandedfoods"], stacks: [ { type: "block", code: "game:woodbucket", attributes: { ucontents: [ { type:"item", code: "expandedfoods:eggyolkportion-{type}", makefull: true } ] } } ] } ],
 	maxstacksize: 5000,
 	materialDensity: 200,

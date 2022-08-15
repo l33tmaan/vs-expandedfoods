@@ -8307,4 +8307,15 @@
   "recipeingredient-item-eggyolkportion-capercaillie-insturmentalcase": "capercaillie egg yolk",
   "incontainer-item-eggyolkportion-capercaillie": "Capercaillie egg yolk",
   "game:incontainer-item-eggyolkportion-capercaillie": "Capercaillie egg yolk",
+
+  "item-eggwhiteportion": "Egg white portion",
+  "game:recipeingredient-item-eggwhiteportion": "Egg white",
+  "recipeingredient-item-eggwhiteportion-insturmentalcase": "Egg white",
+  "incontainer-item-eggwhiteportion": "Egg white",
+  "game:incontainer-item-eggwhiteportion": "Egg white", 
+
+   "item-eggyolk-chicken": "Cracked Chicken Egg",
+   "item-eggyolk-pheasant": "Cracked Pheasant Egg",
+   "item-eggyolk-goldenpheasant": "Cracked Golden Pheasant Egg",
+   "item-eggyolk-capercaillie": "Cracked Capercaillie Egg",
 }

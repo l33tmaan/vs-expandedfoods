@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -84,32 +85,53 @@ namespace ExpandedFoods
 			ItemStack stack = new ItemStack(world.GetItem(new AssetLocation(eggShellOutput)));
 
             BlockLiquidContainerTopOpened blockCnt = block as BlockLiquidContainerTopOpened;
-            if (blockCnt != null)
-            {
-                if (blockCnt.TryPutLiquid(blockSel.Position, eggWhiteStack, ContainedEggLitres) == 0) return;
+            BlockEntityBucket blockInventory = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityBucket;
+            if (blockCnt != null || blockInventory != null)
+            {                        
+                if (eggType == "egg" || eggType == "limeegg")
+					{
+						blockCnt.TryPutLiquid(blockSel.Position, eggWhiteStack, ContainedEggLitres);
+                    }
+                else if (eggType == "eggyolk")
+                    {
+						blockCnt.TryPutLiquid(blockSel.Position, eggYolkStack, ContainedEggLitres);
+                    }
+                // if (blockCnt.TryPutLiquid(blockSel.Position, eggYolkStack, ContainedEggLitres) == 0) return;
             }
             else
-            {
+            {   
                 var beg = api.World.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGroundStorage;
                 if (beg != null)
                 {
-                    ItemSlot squeezeIntoSlot = beg.Inventory.FirstOrDefault(gslot => gslot.Itemstack?.Block != null && CanSqueezeInto(gslot.Itemstack.Block, null));
-                    string containerItemPath = squeezeIntoSlot.Itemstack.Collectible.Code.Path;     //path of the container I'm looking at
-                    if (squeezeIntoSlot != null)
+                    ItemSlot sourceSlot = beg.Inventory.FirstOrDefault(aslot => !aslot.Empty);
+                    var sourceContents = sourceSlot.Itemstack?.Attributes?.GetTreeAttribute("contents").GetItemstack("0");
+
+                    if (sourceContents != null)
                     {
-                        blockCnt = squeezeIntoSlot.Itemstack.Block as BlockLiquidContainerTopOpened;
-                        if (eggType == "egg" || eggType == "limeegg")
-						{
-							blockCnt.TryPutLiquid(squeezeIntoSlot.Itemstack, eggWhiteStack, ContainedEggLitres);
-                        }
-                        else if (eggType == "eggyolk")
+                        //there's already something in the BOWL
+                        Debug.WriteLine(sourceContents.Collectible.Code.Path); //whats in the bowl?  eggwhite perhaps?
+                        Debug.WriteLine(sourceContents.StackSize); //how much stuff exactly is in the bowl?
+
+                        ItemSlot squeezeIntoSlot = beg.Inventory.FirstOrDefault(gslot => gslot.Itemstack?.Block != null && CanSqueezeInto(gslot.Itemstack.Block, null));
+                        string containerItemPath = squeezeIntoSlot.Itemstack.Collectible.Code.Path;     //path of the container I'm looking at
+                        if (squeezeIntoSlot != null)
                         {
-							blockCnt.TryPutLiquid(squeezeIntoSlot.Itemstack, eggYolkStack, ContainedEggLitres);
+                            blockCnt = squeezeIntoSlot.Itemstack.Block as BlockLiquidContainerTopOpened;
+                            if (eggType == "egg" || eggType == "limeegg")
+						    {
+						    	blockCnt.TryPutLiquid(squeezeIntoSlot.Itemstack, eggWhiteStack, ContainedEggLitres);
+                            }
+                            else if (eggType == "eggyolk")
+                            {
+						    	blockCnt.TryPutLiquid(squeezeIntoSlot.Itemstack, eggYolkStack, ContainedEggLitres);
+                            }
+					        beg.MarkDirty(true);
                         }
-					    beg.MarkDirty(true);
                     }
                 }
             }
+
+
 
             slot.TakeOut(1);
             slot.MarkDirty();

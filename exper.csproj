@@ -205,6 +205,13 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\gozinaki.json" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\eggshell.png" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\limeegg.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\beetbroth.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\egg\eggwhite.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\egg\capercaillie.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\egg\chicken.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\egg\goldenpheasant.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\egg\pheasant.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\fishbroth.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\flax.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\hemp.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\olive.png" />
@@ -213,8 +220,10 @@
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\seed.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\soy.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\foodoil\sunflower.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\meatbroth.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\potentmead.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\syrupmead.png" />
+    <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\vegetablebroth.png" />
     <Content Include="mods\vs-expandedfoods\modicon.png" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\sounds\block\mixing.ogg" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\sounds\lock.ogg" />
