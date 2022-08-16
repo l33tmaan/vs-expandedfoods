@@ -53,14 +53,41 @@ namespace ExpandedFoods
 
             Block block = byEntity.World.BlockAccessor.GetBlock(blockSel.Position);
 
-            if (CanSqueezeInto(block, blockSel.Position))
-            {
-                handling = EnumHandHandling.PreventDefault;
-                if (api.World.Side == EnumAppSide.Client)
+            var objectContents = api.World.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGroundStorage;
+            if (objectContents != null)
+		    {
+                ItemSlot objectSourceSlot = objectContents.Inventory.FirstOrDefault(aslot => !aslot.Empty);
+                if (objectSourceSlot != null)
                 {
-                    byEntity.World.PlaySoundAt(new AssetLocation("expandedfoods:sounds/player/eggcrack"), byEntity, null, true, 16, 0.5f);
+                    var objectSourceContents = objectSourceSlot.Itemstack?.Attributes?.GetTreeAttribute("contents").GetItemstack("0")?.Collectible.FirstCodePart(0); //grabs bowl liquid item's code
+                    var objectYolkContents = objectSourceSlot.Itemstack?.Attributes?.GetTreeAttribute("contents").GetItemstack("0")?.Collectible.FirstCodePart(1); //grabs 1st variant in bowl liquid item
+
+                    bool getCracking = false;
+            
+                    if (objectSourceContents == null)
+                    {
+                        if (CanSqueezeInto(block, blockSel.Position))
+                        { getCracking = true; }
+                    }
+
+                    string eggType = slot.Itemstack.Collectible.FirstCodePart(0);   //grabs currently held item's code
+                    string eggVariant = slot.Itemstack.Collectible.FirstCodePart(1);   //grabs 1st variant in currently held item
+
+                    if (objectSourceContents == "eggwhiteportion" && ( eggType == "egg" || eggType == "limeegg") )
+                    { getCracking = true; }
+                    if ( (objectSourceContents == "eggyolkportion" && eggType == "eggyolk" ) && eggVariant == objectYolkContents  )
+                    { getCracking = true; }
+                    
+                    if (getCracking)
+                    {
+                        handling = EnumHandHandling.PreventDefault;
+                        if (api.World.Side == EnumAppSide.Client)
+                        {
+                            byEntity.World.PlaySoundAt(new AssetLocation("expandedfoods:sounds/player/eggcrack"), byEntity, null, true, 16, 0.5f);
+                        }
+                    }
                 }
-            }
+			}
         }
 
         public override bool OnHeldInteractStep(float secondsUsed, ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel)
@@ -96,7 +123,6 @@ namespace ExpandedFoods
             Block block = byEntity.World.BlockAccessor.GetBlock(blockSel.Position);
             if (!CanSqueezeInto(block, blockSel.Position)) return;
 
-            string heldItemPath = slot.Itemstack.Collectible.Code.Path;     //path of the item I'm currently cracking
             string eggType = slot.Itemstack.Collectible.FirstCodePart(0);   //grabs currently held item's code
             string eggVariant = slot.Itemstack.Collectible.FirstCodePart(1);   //grabs 1st variant in currently held item
 			string eggWhiteLiquidAsset = "expandedfoods:eggwhiteportion";             //default liquid output
