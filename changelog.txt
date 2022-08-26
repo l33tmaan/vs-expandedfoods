@@ -36,7 +36,7 @@ Cauldrons have different sealed perish rates & cook times
 Meat & veggies can be boiled in the saucepan
 
 1.5.6
-Added egg cracking - eggs now must be cracked into a liquid container; makes yolks & shells
+Added egg cracking - eggs now must be cracked into a liquid container; makes yolks & shells [will make work in saucepan/cauldron later]
 Added water-glassed eggs (made with slaked lime) - DONE!!!
 Added vegetable, meat, and fish broth - DONE!!!
 Broth is usable in hot pasta - DONE!!!

@@ -5,7 +5,7 @@
 	variantgroups: [
 		{ code: "source", states: ["chicken", "pheasant", "goldenpheasant", "capercaillie"] },
 	],
-	texture: { base: "item/food/eggshell" },
+	texture: { base: "item/food/eggyolk/{source}" },
 	creativeinventory: { "general": ["*"], "items": ["*"], "expandedfoods": ["*"], },
 	guiTransform: {
 		translation: { x: -2, y: -2, z: 0 },
@@ -14,21 +14,8 @@
 		scale: 1.2
 	},
 	fpHandTransform: {
-		translation: { x: -0.05, y: 0.25, z: -0.1 },
-		rotation: { x: 180, y: 76, z: -46 },
-		origin: { x: 0.5, y: 0.25, z: 0.5 }
-	},
-	tpHandTransform: {
-		translation: { x: -1.8, y: -0.7, z: -1.7 },
-		rotation: { x: 0, y: -11, z: -180 },
-		origin: { x: 0.5, y: 0.25, z: 0.5 },
-		scale: 0.3
-	},
-	groundTransform: {
-		translation: { x: 0, y: 0.2, z: 0 },
-		rotation: { x: 1, y: 0, z: -180 },
-		origin: { x: 0.5, y: 0.5, z: 0.5299 },
-		scale: 1.5
+		translation: { x: 0, y: -0.1, z: 0 },
+		rotation: { x: 180, y: 90, z: 22 }
 	},
 	transitionableProps: [{
 		type: "Perish",

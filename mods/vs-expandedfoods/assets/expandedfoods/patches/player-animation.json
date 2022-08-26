@@ -1,7 +1,7 @@
 [
   {
     "op": "add",
-    "path": "/client/animations/22",
+    "path": "/client/animations/-",
     "value": {
       "code": "holdbothhandsmedium",
       "animation": "holdbothhandsmedium",
@@ -24,7 +24,7 @@
   },
   {
     "op": "add",
-    "path": "/client/animations/23",
+    "path": "/client/animations/-",
     "value": {
       "code": "holdbothhandsverylarge",
       "animation": "holdbothhandsverylarge",
@@ -44,5 +44,24 @@
     },
     side: "server",
     "file": "game:entities/humanoid/player.json"
-  }
+  },
+  {
+    "op": "add",
+    "path": "/client/animations/-",
+    "value": {
+      "code": "eggcrackstart",
+      "animation": "eggcrackstart",
+      "blendMode": "Add",
+      "elementWeight": {
+        "UpperArmR": 4,
+        "LowerArmR": 4,
+      },
+      "elementBlendMode": {
+        "UpperArmR": "AddAverage",
+        "LowerArmR": "AddAverage",
+      }
+    },
+    side: "server",
+    "file": "game:entities/humanoid/player.json"
+  },
 ]

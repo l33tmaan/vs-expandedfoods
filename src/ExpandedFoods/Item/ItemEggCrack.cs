@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
+using Vintagestory.API.Common.Entities;
+using Vintagestory.API.MathTools;
 using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 
@@ -15,6 +17,9 @@ namespace ExpandedFoods
 
         WorldInteraction[] interactions;
 
+        public SimpleParticleProperties particles;
+        Random rand = new Random();
+        
         public override void OnLoaded(ICoreAPI api)
         {
             if (api.Side != EnumAppSide.Client) return;
@@ -45,11 +50,18 @@ namespace ExpandedFoods
                     }
                 };
             });
-        }
 
+
+        }
+        public override string GetHeldTpUseAnimation(ItemSlot activeHotbarSlot, Entity byEntity)
+        {
+            return null;
+        }
         public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
         {
             if (blockSel == null || !byEntity.Controls.Sneak) return;
+
+            byEntity.AnimManager.StartAnimation("eggcrackstart");
 
             Block block = byEntity.World.BlockAccessor.GetBlock(blockSel.Position);
  
@@ -84,7 +96,7 @@ namespace ExpandedFoods
 
             if (crackDatEgg == false)
             {
-                var bucketCheck = api.World.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityLiquidContainer;     
+                var bucketCheck = api.World.BlockAccessor?.GetBlockEntity(blockSel.Position) as BlockEntityLiquidContainer;     
                 if (bucketCheck != null)
                 {
                     var bucketCollectible = bucketCheck.Inventory.FirstNonEmptySlot?.Itemstack.Collectible;
@@ -105,10 +117,6 @@ namespace ExpandedFoods
             if (crackDatEgg)            //move to OnHeldInteractStep & play eggcrack.ogg
             {
                 handling = EnumHandHandling.PreventDefault;
-                if (api.World.Side == EnumAppSide.Client)
-                {
-                    byEntity.World.PlaySoundAt(new AssetLocation("expandedfoods:sounds/player/eggcrack"), byEntity, null, true, 16, 0.5f);
-                }
             }
         }
 
@@ -124,9 +132,19 @@ namespace ExpandedFoods
                 tf.Translation.Set(Math.Min(0.6f, secondsUsed * 2), 0, 0); //-Math.Min(1.1f / 3, secondsUsed * 4 / 3f)
                 tf.Rotation.Y = Math.Min(20, secondsUsed * 90 * 2f);
 
-                if (secondsUsed > 0.4f)
+                if (secondsUsed > 1.5f)
                 {
-                    tf.Translation.X += (float)Math.Sin(secondsUsed * 30) / 10;
+                    tf.Translation.X += (float)Math.Sin(secondsUsed / 60);
+                }
+
+                if (secondsUsed > 1.6f)
+                {
+                    tf.Translation.X += (float)Math.Sin(Math.Min(1.0, secondsUsed) * 5) * 0.75f;
+                }
+
+                if (secondsUsed > 1.95f)
+                {
+                    byEntity.AnimManager.StopAnimation("eggcrackstart");
                 }
 
                 byEntity.Controls.UsingHeldItemTransformBefore = tf;
@@ -134,11 +152,19 @@ namespace ExpandedFoods
 
             return secondsUsed < 2f;
         }
+        public override bool OnHeldInteractCancel(float secondsUsed, ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, EnumItemUseCancelReason cancelReason)
+        {
+            byEntity.AnimManager.StopAnimation("eggcrackstart");
+
+            return true;
+        }
 
         public override void OnHeldInteractStop(float secondsUsed, ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel)
         {
             if (blockSel == null) return;
             if (secondsUsed < 1.9f) return;
+
+            byEntity.AnimManager.StopAnimation("eggcrackstart");
 
             IWorldAccessor world = byEntity.World;
 
@@ -203,6 +229,39 @@ namespace ExpandedFoods
             }
 
 
+            if (api.World.Side == EnumAppSide.Client)
+            {
+                byEntity.World.PlaySoundAt(new AssetLocation("expandedfoods:sounds/player/eggcrack"), byEntity, null, true, 16, 0.5f);
+
+            // Primary Particles
+            var color = ColorUtil.ToRgba(50, 219, 206, 164);
+    
+                particles = new SimpleParticleProperties(
+                    4, 6, // quantity
+                    color,
+                    new Vec3d(0.35, 0.1, 0.35), //min position
+                    new Vec3d(), //add position - see below
+                    new Vec3f(0.2f, 0.5f, 0.2f), //min velocity
+                    new Vec3f(), //add velocity - see below
+                    (float)((rand.NextDouble() * 1f) + 0.25f), //life length
+                    (float)((rand.NextDouble() * 0.05f) + 0.2f), //gravity effect 
+                    0.25f, 0.5f, //size
+                    EnumParticleModel.Cube // model
+                    );        
+
+                particles.AddVelocity.Set(new Vec3f(-0.4f, 0.5f, -0.4f)); //add velocity
+                particles.SelfPropelled = true;
+        
+                if (blockInventory != null)
+				{
+                particles.MinPos.Add(new Vec3d(-0.05, 0.5, -0.05)); //add block position
+				}
+
+                Vec3d pos = blockSel.Position.ToVec3d().Add(blockSel.HitPosition);
+                particles.MinPos.Add(blockSel.Position); //add block position
+                particles.AddPos.Set(new Vec3d(0, 0, 0)); //add position
+                world.SpawnParticles(particles);
+            }
 
             slot.TakeOut(1);
             slot.MarkDirty();
@@ -223,4 +282,6 @@ namespace ExpandedFoods
             return interactions.Append(base.GetHeldInteractionHelp(inSlot));
         }
     }
+
+
 }
