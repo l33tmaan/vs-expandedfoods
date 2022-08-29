@@ -8318,4 +8318,6 @@
    "item-eggyolk-pheasant": "Cracked Pheasant Egg",
    "item-eggyolk-goldenpheasant": "Cracked Golden Pheasant Egg",
    "item-eggyolk-capercaillie": "Cracked Capercaillie Egg",
+
+   "itemdesc-eggyolk-*": "Better hurry up and pour the yolk out!",
 }

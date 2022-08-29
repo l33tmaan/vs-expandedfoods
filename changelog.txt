@@ -11,7 +11,6 @@ Added mayo - useable in salads, veggie stews, au gratin, and porridge
 Added cabbage rolls
 Added syrup-glazed termite sticks (w/acorns)
 Added century eggs
-Added lime eggs
 Added herbal bread crumbs
 Added cured aged meat
 Added Garum
@@ -22,6 +21,7 @@ Added candied apples
 Added mushroom ketchup/juice
 Added VanVar compatibility for more mixing bowl variants
 Added gummy candy (spiles on cherry, peach, plum, or apricot tree to get gum; harden into gum or mixed with syrup or honey for candy; make candy molds)
+Added bamboo steamer
 Fixed meat rack cure timer?
 Remove smashed meat variants?
 Acorns stuff compiled into base items & removed; vanilla patches redone
@@ -34,6 +34,7 @@ Fruit leather added?
 Fixed pies?
 Cauldrons have different sealed perish rates & cook times
 Meat & veggies can be boiled in the saucepan
+Cooked meat can be glazed with honey/syrup
 
 1.5.6
 Added egg cracking - eggs now must be cracked into a liquid container; makes yolks & shells [will make work in saucepan/cauldron later]
@@ -62,6 +63,7 @@ Bottles no longer disappear in grass (thanks to SpearAndFang)- DONE!!!
 Mushrooms boil in 0.5 L instead of 1 L - DONE!!!
 You can actually make pickled More Animals eggs - DONE!!!
 Meat hook shape/mold changed
+Sunflower grain can be used in Gozinaki
 
 1.5.5
 Olive oil added

@@ -204,6 +204,10 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\breadedvegetable.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\gozinaki.json" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\eggshell.png" />
+    <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\eggyolk\capercaillie.png" />
+    <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\eggyolk\chicken.png" />
+    <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\eggyolk\goldenpheasant.png" />
+    <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\eggyolk\pheasant.png" />
     <Content Include="mods\vs-expandedfoods\assets\expandedfoods\textures\item\food\limeegg.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\beetbroth.png" />
     <Content Include="mods\vs-expandedfoods\assets\game\textures\item\liquid\egg\eggwhite.png" />
@@ -2397,6 +2401,14 @@
     <None Include="mods\vs-expandedfoods\assets\game\shapes\block\meal\riceandbeans.json" />
     <None Include="mods\vs-expandedfoods\assets\game\shapes\block\meal\salad.json" />
     <None Include="mods\vs-expandedfoods\assets\game\shapes\block\meal\yogurt.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\large\eggfill1.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\large\eggfill2.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\large\eggfill3.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\large\eggfill4.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\small\eggfill1.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\small\eggfill2.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\small\eggfill3.json" />
+    <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\small\eggfill4.json" />
     <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\small\legumefill1.json" />
     <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\small\legumefill2.json" />
     <None Include="mods\vs-expandedfoods\assets\game\shapes\block\wood\trough\small\legumefill3.json" />
