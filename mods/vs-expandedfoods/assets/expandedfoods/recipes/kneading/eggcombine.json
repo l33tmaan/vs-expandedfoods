@@ -1,0 +1,9 @@
+﻿[
+ {
+	ingredients: [
+		{inputs: [{ type: "item", code: "expandedfoods:eggwhiteportion",  quantity: 10 }]},
+		{inputs: [{ type: "item", code: "expandedfoods:eggyolkportion-*", "name": "source", quantity: 10 }]},
+	],
+	output: { type: "item", code: "expandedfoods:eggyolkfullportion-{source}", stackSize: 10}
+ },
+]

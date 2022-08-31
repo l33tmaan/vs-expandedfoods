@@ -140,6 +140,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\acorns\recipes\wildcraft\breadedvegetableherb.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\egg.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\eggyolk.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\eggyolkfull.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\eggyolkportion.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\limeegg.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\patches\compatibility\moreanimals\recipes\acorns\acornbreadedball.json" />
@@ -1366,6 +1367,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\kneading\acorns\acornstuffedpepperoiled.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\kneading\acorns\acornstuffedpeppersyrup.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\kneading\acorns\candy.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\kneading\eggcombine.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\kneading\gozinakisyrup.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\kneading\trailmixvegetarian.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\recipes\kneading\berrydough.json" />
