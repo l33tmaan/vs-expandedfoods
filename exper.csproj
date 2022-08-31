@@ -121,6 +121,7 @@
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\food\wildcraft\wilddehydratedfruit.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\eggwhite.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\eggyolk.json" />
+    <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\eggyolkfull.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\potentspiritportion.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\strongspiritportion.json" />
     <None Include="mods\vs-expandedfoods\assets\expandedfoods\itemtypes\liquid\wildcraft\wildpotentspirit.json" />

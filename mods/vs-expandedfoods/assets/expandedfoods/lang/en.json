@@ -8280,7 +8280,8 @@
   "game:meal-ingredient-soup-primary-limeegg-capercaillie": "water-glassed capercaillie eggs",
   "game:meal-ingredient-soup-secondary-limeegg-capercaillie": "water-glassed capercaillie eggs",
 
-   "game:heldhelp-crack": "Crack",
+   "game:heldhelp-crack": "Crack (partial)",
+   "game:heldhelp-crack2": "Crack (full)",
 
    "item-eggshell": "Egg shells",
 
@@ -8319,5 +8320,29 @@
    "item-eggyolk-goldenpheasant": "Cracked Golden Pheasant Egg",
    "item-eggyolk-capercaillie": "Cracked Capercaillie Egg",
 
-   "itemdesc-eggyolk-*": "Better hurry up and pour the yolk out!",
+  "itemdesc-eggyolk-*": "Better hurry up and pour the yolk out!",
+
+  "item-eggyolkfullportion-chicken": "Liquid chicken egg portion",
+  "game:recipeingredient-item-eggyolkfullportion-chicken": "liquid chicken egg",
+  "recipeingredient-item-eggyolkfullportion-chicken-insturmentalcase": "liquid chicken egg",
+  "incontainer-item-eggyolkfullportion-chicken": "Liquid chicken egg",
+  "game:incontainer-item-eggyolkfullportion-chicken": "Liquid chicken egg",
+
+  "item-eggyolkfullportion-pheasant": "Liquid pheasant egg portion",
+  "game:recipeingredient-item-eggyolkfullportion-pheasant": "liquid pheasant egg",
+  "recipeingredient-item-eggyolkfullportion-pheasant-insturmentalcase": "liquid pheasant egg",
+  "incontainer-item-eggyolkfullportion-pheasant": "Liquid pheasant egg",
+  "game:incontainer-item-eggyolkfullportion-pheasant": "Liquid pheasant egg",
+
+  "item-eggyolkfullportion-goldenpheasant": "Liquid golden pheasant egg portion",
+  "game:recipeingredient-item-eggyolkfullportion-goldenpheasant": "liquid golden pheasant egg",
+  "recipeingredient-item-eggyolkfullportion-goldenpheasant-insturmentalcase": "gliquid golden pheasant egg",
+  "incontainer-item-eggyolkfullportion-goldenpheasant": "Liquid golden pheasant egg",
+  "game:incontainer-item-eggyolkfullportion-goldenpheasant": "Liquid golden pheasant egg",
+
+  "item-eggyolkfullportion-capercaillie": "Liquid capercaillie egg portion",
+  "game:recipeingredient-item-eggyolkfullportion-capercaillie": "liquid capercaillie egg",
+  "recipeingredient-item-eggyolkfullportion-capercaillie-insturmentalcase": "liquid capercaillie egg ",
+  "incontainer-item-eggyolkfullportion-capercaillie": "Liquid capercaillie egg ",
+  "game:incontainer-item-eggyolkfullportion-capercaillie": "Liquid capercaillie egg ",
 }

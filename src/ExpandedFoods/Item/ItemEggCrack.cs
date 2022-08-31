@@ -47,6 +47,13 @@ namespace ExpandedFoods
                         HotKeyCode = "sneak",
                         MouseButton = EnumMouseButton.Right,
                         Itemstacks = stacks.ToArray()
+                    },
+                    new WorldInteraction()
+                    {
+                        ActionLangCode = "heldhelp-crack2",
+                        HotKeyCodes = new string[] {"sneak", "sprint" },
+                        MouseButton = EnumMouseButton.Right,
+                        Itemstacks = stacks.ToArray()
                     }
                 };
             });
@@ -76,7 +83,7 @@ namespace ExpandedFoods
                 ItemSlot bowlSourceSlot = bowlCheck.Inventory.FirstOrDefault(aslot => !aslot.Empty);
                 if (bowlSourceSlot != null)
                 {
-                    var bowlCollectible = bowlSourceSlot.Itemstack?.Attributes?.GetTreeAttribute("contents").GetItemstack("0")?.Collectible;
+                    var bowlCollectible = bowlSourceSlot.Itemstack?.Attributes?.GetTreeAttribute("contents")?.GetItemstack("0")?.Collectible;
                     var bowlSourceContents = bowlCollectible?.FirstCodePart(0); //grabs bowl liquid item's code
                     var bowlYolkContents = bowlCollectible?.FirstCodePart(1); //grabs 1st variant in bowl liquid item
 
@@ -86,11 +93,12 @@ namespace ExpandedFoods
                         { crackDatEgg = true; }
                     }
 
-                    if (bowlSourceContents == "eggwhiteportion" && ( eggType == "egg" || eggType == "limeegg") )                //if egg/limeegg in hand & eggwhiteportion in bucket, crack
+                    if (byEntity.Controls.Sprint && bowlSourceContents == "eggyolkfullportion" && ( eggType == "egg" || eggType == "limeegg") )   //if sprint key is pressed & egg/limeegg in hand & eggyolkfullportion in bucket, crack
                         { crackDatEgg = true; }
-                    if ( (bowlSourceContents == "eggyolkportion" && eggType == "eggyolk" ) && eggVariant == bowlYolkContents  )             //if eggyolk in hand & eggyolkportion in bucket AND eggyolk variant matches bucket yolk variant, crack
+                    else if (!byEntity.Controls.Sprint && bowlSourceContents == "eggwhiteportion" && ( eggType == "egg" || eggType == "limeegg") )                //if egg/limeegg in hand & eggwhiteportion in bucket, crack
                         { crackDatEgg = true; }
-                    
+                    else if ( (bowlSourceContents == "eggyolkportion" && eggType == "eggyolk" ) && eggVariant == bowlYolkContents  )             //if eggyolk in hand & eggyolkportion in bucket AND eggyolk variant matches bucket yolk variant, crack
+                        { crackDatEgg = true; }
                 }
 			}
 
@@ -108,12 +116,14 @@ namespace ExpandedFoods
                         if (CanSqueezeInto(block, blockSel.Position))               //fill empty bucket
                         { crackDatEgg = true; }
                     }
-                    if (bucketSourceContents == "eggwhiteportion" &&  ( eggType == "egg" || eggType == "limeegg") )             //if egg/limeegg in hand & eggwhiteportion in bucket, crack
+                    if ((byEntity.Controls.Sprint && bucketSourceContents == "eggyolkfullportion" && ( eggType == "egg" || eggType == "limeegg") ) && eggVariant == bucketYolkContents  )             //if holding sprint key AND eggyolk in hand & eggyolkportion in bucket AND eggyolk variant matches bucket yolk variant, crack
                         { crackDatEgg = true; }
-                    if ( (bucketSourceContents == "eggyolkportion" && eggType == "eggyolk" ) && eggVariant == bucketYolkContents  )             //if eggyolk in hand & eggyolkportion in bucket AND eggyolk variant matches bucket yolk variant, crack
+                    else if (!byEntity.Controls.Sprint && bucketSourceContents == "eggwhiteportion" &&  ( eggType == "egg" || eggType == "limeegg") )             //if egg/limeegg in hand & eggwhiteportion in bucket, crack
                         { crackDatEgg = true; }
-                }
-            }
+					else if ((bucketSourceContents == "eggyolkportion" && eggType == "eggyolk") && eggVariant == bucketYolkContents)             //if eggyolk in hand & eggyolkportion in bucket AND eggyolk variant matches bucket yolk variant, crack
+					{ crackDatEgg = true; }
+				}
+			}
             if (crackDatEgg)            //move to OnHeldInteractStep & play eggcrack.ogg
             {
                 handling = EnumHandHandling.PreventDefault;
@@ -176,17 +186,23 @@ namespace ExpandedFoods
 			string eggWhiteLiquidAsset = "expandedfoods:eggwhiteportion";             //default liquid output
             string eggYolkOutput = "expandedfoods:eggyolk-" + eggVariant;       //searches for eggVariant and adds to eggyolk item
             string eggYolkLiquidAsset = "expandedfoods:eggyolkportion-" + eggVariant; //searches for eggVariant and adds to eggyolkportion item
+            string eggYolkFullLiquidAsset = "expandedfoods:eggyolkfullportion-" + eggVariant; //searches for eggVariant and adds to eggyolkfullportion item
 			string eggShellOutput = "expandedfoods:eggshell";                    //default item output
 
 			ItemStack eggWhiteStack = new ItemStack(world.GetItem(new AssetLocation(eggWhiteLiquidAsset)), 99999);
 			ItemStack eggYolkStack = new ItemStack(world.GetItem(new AssetLocation(eggYolkLiquidAsset)), 99999);
+			ItemStack eggYolkFullStack = new ItemStack(world.GetItem(new AssetLocation(eggYolkFullLiquidAsset)), 99999);
 			ItemStack stack = new ItemStack(world.GetItem(new AssetLocation(eggShellOutput)));
 
             BlockLiquidContainerTopOpened blockCnt = block as BlockLiquidContainerTopOpened;
             BlockEntityBucket blockInventory = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityBucket;
             if (blockCnt != null || blockInventory != null)
-            {                        
-                if (eggType == "egg" || eggType == "limeegg")
+            {                   
+                if (byEntity.Controls.Sprint && (eggType == "egg" || eggType == "limeegg"))
+					{
+						blockCnt.TryPutLiquid(blockSel.Position, eggYolkFullStack, ContainedEggLitres);
+                    }                 
+                else if (eggType == "egg" || eggType == "limeegg")
 					{
 						blockCnt.TryPutLiquid(blockSel.Position, eggWhiteStack, ContainedEggLitres);
                     }
@@ -202,20 +218,24 @@ namespace ExpandedFoods
                 if (beg != null)
                 {
                     ItemSlot sourceSlot = beg.Inventory.FirstOrDefault(aslot => !aslot.Empty);
-                    var sourceContents = sourceSlot.Itemstack?.Attributes?.GetTreeAttribute("contents").GetItemstack("0");
+                    var sourceContents = sourceSlot.Itemstack?.Attributes?.GetTreeAttribute("contents")?.GetItemstack("0");
 
-                    if (sourceContents != null)
+                    /* if (sourceContents != null)
                     {
                         //there's already something in the BOWL
                         Debug.WriteLine(sourceContents.Collectible.Code.Path); //whats in the bowl?  eggwhite perhaps?
                         Debug.WriteLine(sourceContents.StackSize); //how much stuff exactly is in the bowl?
-                    }
+                    } */
                     ItemSlot squeezeIntoSlot = beg.Inventory.FirstOrDefault(gslot => gslot.Itemstack?.Block != null && CanSqueezeInto(gslot.Itemstack.Block, null));
                     string containerItemPath = squeezeIntoSlot.Itemstack.Collectible.Code.Path;     //path of the container I'm looking at
                     if (squeezeIntoSlot != null)
                     {
                         blockCnt = squeezeIntoSlot.Itemstack.Block as BlockLiquidContainerTopOpened;
-                        if (eggType == "egg" || eggType == "limeegg")
+                        if (byEntity.Controls.Sprint && (eggType == "egg" || eggType == "limeegg"))
+						{
+							blockCnt.TryPutLiquid(squeezeIntoSlot.Itemstack, eggYolkFullStack, ContainedEggLitres);
+                        }
+                        else if (eggType == "egg" || eggType == "limeegg")
 						{
 							blockCnt.TryPutLiquid(squeezeIntoSlot.Itemstack, eggWhiteStack, ContainedEggLitres);
                         }
