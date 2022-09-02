@@ -36,16 +36,20 @@ Cauldrons have different sealed perish rates & cook times
 Meat & veggies can be boiled in the saucepan
 Cooked meat can be glazed with honey/syrup
 
-1.5.6
+1.6.1
+Ancient Tools Compatibility added
+RenderIngredients now uses selectiveElements to cut down on files
+Breaded mushrooms added
+Meat hook shape/mold changed
+
+1.6.0
 Added egg cracking - eggs now must be cracked into a liquid container; makes yolks & shells [will make work in saucepan/cauldron later]
 Added water-glassed eggs (made with slaked lime) - DONE!!!
 Added vegetable, meat, and fish broth - DONE!!!
 Broth is usable in hot pasta - DONE!!!
-Ancient Tools Compatibility added
-RenderIngredients now uses selectiveElements to cut down on files
-Breaded mushrooms added
 Fixed visual issues with Alchemy herbs & racks - DONE!!!
 Meat rack model updated - DONE!!!
+New meat hook clay mold; outputs 8 hooks instead of 5 - DONE!!!
 Rolling pin is ground storable (1.17)
 Saucepan/cauldron/mixing bowl shapes refined - DONE!!!
 Many blocks can be bought/sold by Agricultural trader - DONE!!!
@@ -59,11 +63,11 @@ Meat nugget shapes altered - DONE!!!
 New liquid textures for broth, yeast, fish sauce, oil, and raspberry gelatin (thanks to Ledyanaya Sonya) - DONE!!!
 Salad shape refined - DONE!!!
 English translation refined (thanks to Ledyanaya Sonya) - DONE!!!
+Japanese translation refined (thanks to Macoto_Hino)
 Bottles no longer disappear in grass (thanks to SpearAndFang)- DONE!!!
 Mushrooms boil in 0.5 L instead of 1 L - DONE!!!
 You can actually make pickled More Animals eggs - DONE!!!
-Meat hook shape/mold changed
-Sunflower grain can be used in Gozinaki
+Sunflower grain + honey makes Gozinaki, not sunflower candy - DONE!!!
 
 1.5.5
 Olive oil added
