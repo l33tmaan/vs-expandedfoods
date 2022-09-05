@@ -16,7 +16,10 @@
     	"expandedNutritionPropsByType": {
 			"*-dough": {
       			"acorns:flour-acorn" : { saturation: 155, foodcategory: "Grain" },
-				"game:egg-chicken-raw": { saturation: 165, foodcategory: "Protein"}
+				"expandedfoods:eggyolkfullportion-chicken": { saturation: 20, foodcategory: "Protein"},
+				"expandedfoods:eggyolkfullportion-pheasant": { saturation: 28, foodcategory: "Protein"},
+				"expandedfoods:eggyolkfullportion-goldenpheasant": { saturation: 28, foodcategory: "Protein"},
+				"expandedfoods:eggyolkfullportion-capercaillie": { saturation: 28, foodcategory: "Protein"},
 			},
 		},
     		renderIngredientsByType: {

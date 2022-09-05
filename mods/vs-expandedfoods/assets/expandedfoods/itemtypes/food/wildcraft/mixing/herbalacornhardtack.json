@@ -12,7 +12,10 @@
 		expandedNutritionProps: {
       		"game:salt" : { saturation: 0, foodcategory: "Grain" },
 			"expandedfoods:brothportion-bone": { saturation: 1, "health": 0.1, foodcategory: "Protein"},
-			"game:egg-chicken-raw": { saturation: 150, foodcategory: "Protein"},
+			"expandedfoods:eggyolkfullportion-chicken": { saturation: 20, foodcategory: "Protein"},
+			"expandedfoods:eggyolkfullportion-pheasant": { saturation: 28, foodcategory: "Protein"},
+			"expandedfoods:eggyolkfullportion-goldenpheasant": { saturation: 28, foodcategory: "Protein"},
+			"expandedfoods:eggyolkfullportion-capercaillie": { saturation: 28, foodcategory: "Protein"},
 		},
 		bakingPropertiesByType: {
 			"*-raw": {
