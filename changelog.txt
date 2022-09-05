@@ -44,7 +44,7 @@ Meat hook shape/mold changed
 
 1.6.0
 Added egg cracking - eggs now must be cracked into a liquid container; makes yolks & shells [will make work in saucepan/cauldron later]
-Added water-glassed eggs (made with slaked lime) - DONE!!!
+Added water-glassed eggs (made with slaked lime), interchangable with raw eggs - DONE!!!
 Added vegetable, meat, and fish broth - DONE!!!
 Broth is usable in hot pasta - DONE!!!
 Fixed visual issues with Alchemy herbs & racks - DONE!!!

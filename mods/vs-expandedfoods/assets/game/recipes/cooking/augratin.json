@@ -176,11 +176,13 @@
 		{ 
 			code: "egg-extra", 
 			validStacks: [ 
-				{ type: "item", code: "egg-chicken-raw",  shapeElement: "bowl/egg/*" },
-				{ type: "item", code: "egg-chicken-pickled",  shapeElement: "bowl/egg/*" },
+				{ type: "item", code: "expandedfoods:eggwhiteportion-*",  shapeElement: "bowl/egg/*" },
+				{ type: "item", code: "expandedfoods:eggyolkportion-*",  shapeElement: "bowl/egg/*" },
+				{ type: "item", code: "expandedfoods:eggyolkfullportion-*",  shapeElement: "bowl/egg/*" },
 			],
 			minQuantity: 0,
-			maxQuantity: 1
+			maxQuantity: 1,
+			portionSizeLitres: 0.1,
 		},
 		{
 			code: "protein-extra",

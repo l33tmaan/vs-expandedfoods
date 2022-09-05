@@ -350,8 +350,8 @@
 		{
 			code: "egg-extra",
 			validStacks: [
-				{ type: "item", code: "game:egg-chicken-boiled",  shapeElement: "bowl/egg/*" },
-				{ type: "item", code: "game:egg-chicken-pickled",  shapeElement: "bowl/egg/*" },
+				{ type: "item", code: "game:egg-*-boiled",  shapeElement: "bowl/egg/*" },
+				{ type: "item", code: "game:egg-*-pickled",  shapeElement: "bowl/egg/*" },
 			],
 			minQuantity: 0,
 			maxQuantity: 1
@@ -371,8 +371,8 @@
 				{ type: "item", code: "game:bushmeat-charred",  shapeElement: "bowl/red meat/*", textureMapping: ["meat", "group8"]  },
 				{ type: "item", code: "game:redmeat-charred",  shapeElement: "bowl/red meat/*", textureMapping: ["meat", "group6"]  },
 				{ type: "item", code: "game:poultry-charred",  shapeElement: "bowl/poultry/*", textureMapping: ["meat", "group5"]  },
-				{ type: "item", code: "game:egg-chicken-boiled",  shapeElement: "bowl/egg2/*" },
-				{ type: "item", code: "game:egg-chicken-pickled",  shapeElement: "bowl/egg2/*" },
+				{ type: "item", code: "game:egg-*-boiled",  shapeElement: "bowl/egg2/*" },
+				{ type: "item", code: "game:egg-*-pickled",  shapeElement: "bowl/egg2/*" },
 				{ type: "item", code: "expandedfoods:meatnugget-bushmeat-tenderpartbaked",  shapeElement: "bowl/red meat/*", textureMapping: ["meat", "group8"]  },
 				{ type: "item", code: "expandedfoods:meatnugget-redmeat-tenderpartbaked",  shapeElement: "bowl/red meat/*", textureMapping: ["meat", "group6"]  },
 				{ type: "item", code: "expandedfoods:meatnugget-poultry-tenderpartbaked",  shapeElement: "bowl/poultry/*", textureMapping: ["meat", "group5"]  },
