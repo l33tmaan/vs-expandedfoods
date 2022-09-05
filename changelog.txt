@@ -68,6 +68,7 @@ Bottles no longer disappear in grass (thanks to SpearAndFang)- DONE!!!
 Mushrooms boil in 0.5 L instead of 1 L - DONE!!!
 You can actually make pickled More Animals eggs - DONE!!!
 Sunflower grain + honey makes Gozinaki, not sunflower candy - DONE!!!
+Salt barrel recipe requires 10 L of water instead of  1 L - DONE!!!
 
 1.5.5
 Olive oil added
