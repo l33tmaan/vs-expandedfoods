@@ -20,7 +20,7 @@ namespace ExpandedFoods
 {
     public class ExpandedFoods : ModSystem
     {
-        private static Harmony harmony;
+        Harmony harmony = new Harmony("com.jakecool19.expandedfoods.cookingoverhaul"); // remove private static and changed where the new harmony is..
 
         public override void Start(ICoreAPI api)
         {
@@ -63,11 +63,8 @@ namespace ExpandedFoods
             api.RegisterItemClass("ExpandedDough", typeof(ItemExpandedDough));
             api.RegisterItemClass("EggCrack", typeof(ItemEggCrack));
 
-			if (harmony == null)
-            {
-                harmony = new Harmony("com.jakecool19.expandedfoods.cookingoverhaul");
-                harmony.PatchAll(Assembly.GetExecutingAssembly());
-            }
+	    // removed harmony == null check
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         public override void Dispose()
